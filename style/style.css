@@ -74,10 +74,6 @@ a {
   -webkit-box-sizing: border-box;
 }
 
-::selection {
-  background-color: #ffad99;
-}
-
 p {
   font-size: 16px;
   line-height: 24px;
@@ -111,9 +107,27 @@ h4 {
   font-weight: 200;
 }
 
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: flex-start;
+}
+
+[class^='screen-'],
+[class*=' screen-'] {
+  max-width: 700px;
+  min-width: 320px;
+  min-height: 960px;
+  display: block;
+  background-color: #fff;
+  margin: 8rem;
+}
+
 .button {
   display: inline-block;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: all 0.2s ease;
   font-weight: 500;
@@ -121,61 +135,9 @@ h4 {
   text-align: center;
   border: none;
   outline: none;
-  color: #fff;
-  background-color: #f75;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  font-size: 20px;
-  line-height: 24px;
-}
-
-.button:hover {
-  background-color: #f27151;
-}
-
-.button:focus {
-  background-color: #e66b4d;
-}
-
-.button:active {
-  background-color: #d96548;
-}
-
-.button.-cancel {
-  color: #fff;
-  background-color: #ccc;
-}
-
-.button.-cancel:hover {
-  background-color: #c2c2c2;
-}
-
-.button.-cancel:focus {
-  background-color: #b8b8b8;
-}
-
-.button.-cancel:active {
-  background-color: #adadad;
-}
-
-.button.-small {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.button.-tiny {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  font-size: 14px;
-  line-height: 16px;
+  height: 3.5rem;
+  border-radius: 1.75rem;
+  background-color: #f0f0f0;
 }
 
 .button:focus {
@@ -184,4 +146,10 @@ h4 {
 
 .button:active {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  width: 400px;
+  height: 110px;
+  background-image: url("../images/splash-logo.png");
 }
