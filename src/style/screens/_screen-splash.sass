@@ -1,4 +1,22 @@
-.logo
-  width: 400px
-  height: 110px
-  background-image: url("../images/splash-logo.png")
+.screen-splash
+  position: relative
+
+  .logo
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    top: 10%
+    width: 400px
+    height: 110px
+    background-image: url("../images/splash-logo.png")
+
+  .image
+    position: absolute
+    right: 0
+    top: calc(55% + 55px)
+    transform: translateY(-50%)
+    width: 750px
+    height: 850px
+    background-image: url("../images/splash-image.svg")
+    background-repeat: no-repeat
+    background-position: right center

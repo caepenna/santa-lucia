@@ -118,12 +118,12 @@ body {
 
 [class^='screen-'],
 [class*=' screen-'] {
-  max-width: 700px;
-  min-width: 320px;
-  min-height: 960px;
+  width: 750px;
+  min-height: 1334px;
   display: block;
   background-color: #fff;
   margin: 8rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .button {
@@ -148,8 +148,28 @@ body {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
-.logo {
+.screen-splash {
+  position: relative;
+}
+
+.screen-splash .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
   width: 400px;
   height: 110px;
   background-image: url("../images/splash-logo.png");
+}
+
+.screen-splash .image {
+  position: absolute;
+  right: 0;
+  top: calc(55% + 55px);
+  transform: translateY(-50%);
+  width: 750px;
+  height: 850px;
+  background-image: url("../images/splash-image.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
 }
