@@ -58,7 +58,6 @@ table {
 
 html {
   font-size: 16px;
-  background-color: #333;
   font-family: "Objektiv Mk", Helvetica, sans-serif;
   font-weight: 400;
   height: 100%;
@@ -116,14 +115,41 @@ body {
   align-content: flex-start;
 }
 
-[class^='screen-'],
-[class*=' screen-'] {
+.mockup-screen {
   width: 750px;
   min-height: 1334px;
   display: block;
   background-color: #fff;
   margin: 8rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.input-text {
+  appearance: none;
+  border: none;
+  height: 4rem;
+  width: 100%;
+  border-bottom: 1px solid #9499B7;
+  margin-bottom: 2rem;
+  color: #373C4D;
+  font-size: 30px;
+}
+
+.input-text::-webkit-input-placeholder {
+  color: #373C4D;
+}
+
+.input-text:-moz-placeholder {
+  color: #373C4D;
+}
+
+.input-text::-moz-placeholder {
+  color: #373C4D;
+}
+
+.input-text:-ms-input-placeholder {
+  color: #373C4D;
 }
 
 .button {
@@ -160,16 +186,22 @@ body {
   width: 400px;
   height: 110px;
   background-image: url("../images/splash-logo.png");
+  z-index: 2;
 }
 
 .screen-splash .image {
   position: absolute;
   right: 0;
-  top: calc(55% + 55px);
-  transform: translateY(-50%);
+  top: calc(110px + 10%);
   width: 750px;
   height: 850px;
   background-image: url("../images/splash-image.svg");
   background-repeat: no-repeat;
   background-position: right center;
+  z-index: 1;
+}
+
+.screen-login {
+  padding-left: calc(4rem + 4vw);
+  padding-right: calc(4rem + 4vw);
 }
