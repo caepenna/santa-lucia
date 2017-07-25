@@ -223,6 +223,7 @@ body {
   background-image: url("../images/splash-image.png");
   background-repeat: no-repeat;
   background-position: right center;
+  background-size: 100%;
   z-index: 1;
 }
 
