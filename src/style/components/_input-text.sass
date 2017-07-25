@@ -5,9 +5,13 @@
   height: 4rem
   width: 100%
   border-bottom: 1px solid $color-coolgray-light
-  margin-bottom: 2rem
+  margin-bottom: 2.5rem
   
   color: $color-coolgray-dark
-  font-size: 30px //to do: standarize font-size
+  font-size: $font-size-base
+  font-family: $font-family-default
 
   +placeholder-color($color-coolgray-dark)
+
+  &:active
+    background-color: rgba(#000, 0.1)
