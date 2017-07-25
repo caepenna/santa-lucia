@@ -243,6 +243,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 6.5rem;
+  width: 100%;
 }
 
 .screen-login > nav.sign > a {
