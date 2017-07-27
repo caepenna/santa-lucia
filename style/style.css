@@ -75,8 +75,8 @@ a {
 }
 
 p {
-  font-size: 15px;
-  line-height: 30px;
+  font-size: 12px;
+  line-height: 18px;
   margin-bottom: 1.5rem;
 }
 
@@ -88,22 +88,22 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 40px;
-  line-height: 45px;
+  line-height: 40px;
 }
 
 h2 {
-  font-size: 35px;
-  line-height: 40px;
+  font-size: 32px;
+  line-height: 20px;
 }
 
 h3 {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 h4 {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 18px;
   font-weight: 200;
 }
 
@@ -117,8 +117,9 @@ body {
 }
 
 .mockup-screen {
-  width: 750px;
-  min-height: 1334px;
+  width: 375px;
+  height: 667px;
+  overflow-y: scroll;
   display: block;
   background-color: #fff;
   margin: 8rem;
@@ -129,12 +130,12 @@ body {
 .input-text {
   appearance: none;
   border: none;
-  height: 4rem;
+  height: 2rem;
   width: 100%;
   border-bottom: 1px solid #9499B7;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.25rem;
   color: #373C4D;
-  font-size: 30px;
+  font-size: 16px;
   font-family: "Objektiv Mk", Helvetica, sans-serif;
 }
 
@@ -161,10 +162,10 @@ body {
 .button {
   border: none;
   outline: none;
-  border-radius: 1.75rem;
-  padding: 1rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
   width: 100%;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.25rem;
   display: inline-block;
   white-space: nowrap;
   vertical-align: middle;
@@ -172,7 +173,7 @@ body {
   font-weight: 500;
   letter-spacing: 0.05em;
   line-height: 1.5rem;
-  font-size: 30px;
+  font-size: 16px;
   color: #373C4D;
   background-color: #f0f0f0;
 }
@@ -207,17 +208,18 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 7rem;
-  width: 400px;
-  height: 110px;
+  top: 3rem;
+  width: 200px;
+  height: 55px;
   background-image: url("../images/splash-logo.png");
+  background-size: 100%;
   z-index: 2;
 }
 
 .screen-splash .image {
   position: absolute;
   right: 0;
-  top: calc(110px + 11rem);
+  top: calc(55px + 5rem);
   width: 750px;
   height: 850px;
   background-image: url("../images/splash-image.png");
@@ -228,9 +230,9 @@ body {
 }
 
 .screen-login {
-  padding-top: 6.5rem;
-  padding-left: calc(4rem + 4vw);
-  padding-right: calc(4rem + 4vw);
+  padding-top: 3em;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .screen-login > .divisor {
@@ -242,18 +244,18 @@ body {
 .screen-login > nav.sign {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 6.5rem;
+  margin-bottom: 3.25rem;
   width: 100%;
 }
 
 .screen-login > nav.sign > a {
-  padding-top: 8rem;
+  padding-top: 4rem;
   padding-bottom: 1rem;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 16px;
   color: #66809F;
   background-position: center 0;
-  background-size: 8rem;
+  background-size: 4rem;
   background-repeat: no-repeat;
 }
 
