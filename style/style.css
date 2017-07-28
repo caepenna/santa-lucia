@@ -224,7 +224,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 3rem;
+  top: 64px;
   width: 200px;
   height: 55px;
   background-image: url("../images/splash-logo.png");
@@ -235,13 +235,13 @@ body {
 .screen-splash .image {
   position: absolute;
   right: 0;
-  top: calc(55px + 5rem);
-  width: 750px;
-  height: 850px;
+  top: calc(55px + 104px);
+  width: 375px;
+  height: 425px;
   background-image: url("../images/splash-image.png");
   background-repeat: no-repeat;
   background-position: right center;
-  background-size: 100%;
+  background-size: 100% auto;
   z-index: 1;
 }
 
