@@ -75,7 +75,7 @@ a {
 }
 
 p {
-  font-size: 12px;
+  font-size: 10px;
   line-height: 18px;
   margin-bottom: 1.5rem;
 }
@@ -97,12 +97,12 @@ h2 {
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
 }
 
 h4 {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 18px;
   font-weight: 200;
 }
@@ -135,7 +135,7 @@ body {
   border-bottom: 1px solid #9499B7;
   margin-bottom: 1.25rem;
   color: #373C4D;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Objektiv Mk", Helvetica, sans-serif;
 }
 
@@ -159,27 +159,43 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.input-label {
+  font-size: 12px;
+  color: #66809F;
+}
+
 .button {
   border: none;
   outline: none;
-  border-radius: 1rem;
-  padding: 0.5rem;
+  border-radius: 14px;
+  padding: 0 1rem;
   width: 100%;
-  margin-bottom: 1.25rem;
   display: inline-block;
   white-space: nowrap;
   vertical-align: middle;
   text-align: center;
   font-weight: 500;
   letter-spacing: 0.05em;
-  line-height: 1.5rem;
-  font-size: 16px;
+  line-height: 28px;
+  font-size: 14px;
   color: #373C4D;
   background-color: #f0f0f0;
 }
 
 .button:active {
   background-color: #d8d8d8;
+}
+
+.button.-right, .button.-left {
+  width: auto;
+}
+
+.button.-left {
+  float: left;
+}
+
+.button.-right {
+  float: right;
 }
 
 .button.-ghost {
@@ -230,32 +246,40 @@ body {
 }
 
 .screen-login {
-  padding-top: 3em;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-top: 96px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 
-.screen-login > .divisor {
-  border-top: 1px solid #9499B7;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
+.screen-login > .button {
+  margin-top: 32px;
+}
+
+.screen-login > .input-text {
+  margin-bottom: 16px;
+}
+
+.screen-login > .-left.-ghost {
+  cursor: default;
+  font-size: 12px;
+  padding: 0;
 }
 
 .screen-login > nav.sign {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3.25rem;
+  margin-bottom: 64px;
   width: 100%;
 }
 
 .screen-login > nav.sign > a {
-  padding-top: 4rem;
-  padding-bottom: 1rem;
+  padding-top: 64px;
+  padding-bottom: 16px;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
   color: #66809F;
   background-position: center 0;
-  background-size: 4rem;
+  background-size: 64px;
   background-repeat: no-repeat;
 }
 

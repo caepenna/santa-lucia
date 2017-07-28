@@ -26,17 +26,41 @@ html
         a.signin.-active Entrar
         a.signup Registrar
 
-      input.input-text type="text" placeholder="email"
-      input.input-text type="text" placeholder="senha"
+      input.input-text#email type="text" placeholder="email"
+      input.input-text#password type="text" placeholder="senha"
 
       a.button Entrar
       a.button.-facebook Entrar com Facebook
-      a.button.-ghost Não possui conta?
-      a.button Registrar
-
-      .divisor
+      a.button.-left.-ghost Esqueceu a senha?
+      a.button.-right Recuperar
       
-      a.button.-ghost Esqueceu a senha?
+
+    content.screen-login.mockup-screen
+
+      nav.sign
+        a.signin Entrar
+        a.signup.-active Registrar
+
+      input.input-text#email type="text" placeholder="email"
+      input.input-text#password type="text" placeholder="senha"
+
+      a.button Entrar
+      a.button.-facebook Entrar com Facebook
+      
+
+    content.screen-login.mockup-screen
+
+      nav.sign
+        a.signin Entrar
+        a.signup.-active Registrar
+
+      input.input-text#email type="text" placeholder="email" value="thais.lorenzini@gmail.com"
+      input.input-text#password type="text" placeholder="senha" value="••••••"
+      label.input-label for="passwordagain" Insira a senha novamente:
+      input.input-text#passwordagain type="text"
+
+      a.button Entrar
+      a.button.-facebook Entrar com Facebook
       
 
     content.screen-profile.mockup-screen
