@@ -164,6 +164,7 @@ body {
   display: block;
   font-size: 12px;
   color: #66809F;
+  width: 100%;
 }
 
 .top-menu {
@@ -356,6 +357,7 @@ body {
   margin-left: -64px;
   margin-right: -64px;
   display: block;
+  width: 100vw;
 }
 
 .screen-profile > .avatar {
@@ -380,4 +382,5 @@ body {
   font-weight: 400;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  width: 100%;
 }
