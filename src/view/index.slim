@@ -65,20 +65,26 @@ html
 
     content.screen-profile.mockup-screen
 
-      header
-        a.back
+      header.top-menu
+        a.icon.-back
         span.title Meu Perfil
-        a.edit
+        a.icon.-edit
 
-      .info
-        .avatar
-        span.name Thais Lorenzini
-        input.input-text type="text" value="26/10/1985"
-        input.input-text type="text" value="thais.lorenzini@gmail.com"
+      .avatar
+      h2.name Thais Lorenzini
+      label.input-label for="birthday" Nascimento
+      input.input-text#birthday type="text" value="26/10/1985"
+      select
+        option Feminino
+        option Masculino
+        option Outro
+      input.input-text type="text" value="thais.lorenzini@gmail.com"
+      input.input-text type="text" value="+55 61 98143-7808"
+      label.input-label for="range" R$ por consulta
+      input type="range"
 
       .accordion
         span.title Plano de Saúde
 
       .accordion
         span.title Formas de Pagamento
-
