@@ -39,8 +39,21 @@ html
       label.input-label for="range" R$ por consulta
       input type="range"
 
-    .accordion
-      span.title Plano de Saúde
-
-    .accordion
-      span.title Formas de Pagamento
+    .accordion-container
+      .accordion
+        h2.title Plano de Saúde
+        ul.list
+          li
+            h3.-photo Carteirinha
+          li
+            h3 Dependentes:
+            ul
+              li.icontext.-check Miguel Lorenzini
+              li.icontext.-check Vera Lúcia Lorenzini
+              li.icontext.-addperson Novo Dependente
+      .accordion
+        h2.title Formas de pagamento
+        ul.list
+          li
+            h3.-photo Cartão cadastrado
+          li.icontext.-add Adicionar forma de pagamento
