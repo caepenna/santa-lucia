@@ -26,8 +26,10 @@ html
         a.signin.-active Entrar
         a.signup Registrar
 
-      input.input-text#email type="text" placeholder="email"
-      input.input-text#password type="text" placeholder="senha"
+      .input-text
+        input#email type="text" placeholder="email"
+      .input-text
+        input#password type="text" placeholder="senha"
 
       a.button Entrar
       a.button.-facebook Entrar com Facebook
@@ -41,8 +43,10 @@ html
         a.signin Entrar
         a.signup.-active Registrar
 
-      input.input-text#email type="text" placeholder="email"
-      input.input-text#password type="text" placeholder="senha"
+      .input-text
+        input#email type="text" placeholder="email"
+      .input-text
+        input#password type="text" placeholder="senha"
 
       a.button Entrar
       a.button.-facebook Entrar com Facebook
@@ -54,10 +58,13 @@ html
         a.signin Entrar
         a.signup.-active Registrar
 
-      input.input-text#email type="text" placeholder="email" value="thais.lorenzini@gmail.com"
-      input.input-text#password type="text" placeholder="senha" value="••••••"
+      .input-text
+        input#email type="text" placeholder="email" value="thais.lorenzini@gmail.com"
+      .input-text
+        input#password type="text" placeholder="senha" value="••••••"
       label.input-label for="passwordagain" Insira a senha novamente:
-      input.input-text#passwordagain type="text"
+      .input-text
+        input#passwordagain type="text"
 
       a.button Entrar
       a.button.-facebook Entrar com Facebook
@@ -72,14 +79,21 @@ html
 
       .avatar
       h2.name Thais Lorenzini
-      label.input-label for="birthday" Nascimento
-      input.input-text#birthday type="text" value="26/10/1985"
-      select
-        option Feminino
-        option Masculino
-        option Outro
-      input.input-text type="text" value="thais.lorenzini@gmail.com"
-      input.input-text type="text" value="+55 61 98143-7808"
+      .input-text.-birthday
+        input#birthday type="text" value="26/10/1985"
+      .input-select.-gender
+        select
+          option Feminino
+          option Masculino
+          option Outro
+      .input-text.-email
+        input type="text" value="thais.lorenzini@gmail.com"
+      .input-text.-phone
+        input type="text" value="+55 61 98143-7808"
+      .input-select
+        select
+          option Particular
+          option Público
       label.input-label for="range" R$ por consulta
       input type="range"
 

@@ -1,17 +1,8 @@
 .input-text
-  appearance: none
-  border: none
+  position: relative
 
-  height: 2rem
-  width: 100%
-  border-bottom: 1px solid $color-coolgray-light
-  margin-bottom: 1.25rem
-  
-  color: $color-coolgray-dark
-  font-size: $font-size-base
-  font-family: $font-family-default
+  input
+    +input-style
 
-  +placeholder-color($color-coolgray-dark)
-
-  &:active
-    background-color: rgba(#000, 0.1)
+    &:active
+      background-color: rgba(#000, 0.1)

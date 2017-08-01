@@ -11,5 +11,20 @@
   &::-moz-placeholder
     color: $color
   &:-ms-input-placeholder
-    color: $color
-  
+    color: $color  
+
+=input-style
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  border: none
+  height: 48px
+  width: 100%
+  border-bottom: 1px solid $color-coolgray-light
+  border-radius: 0
+  background-color: transparent
+  color: $color-coolgray-dark
+  font-size: $font-size-base
+  font-family: $font-family-default
+  +placeholder-color($color-coolgray-dark)
+    

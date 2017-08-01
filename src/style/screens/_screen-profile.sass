@@ -33,3 +33,25 @@
     margin-top: 1rem
     margin-bottom: 2rem
     width: 100%
+
+  > .input-text,
+  > .input-select
+    &:before
+      content: ''
+      position: absolute
+      width: 48px
+      height: 48px
+      display: block
+      left: -48px
+      background-position: center
+      background-size: 100%
+      background-repeat: no-repeat
+    &.-birthday:before
+      background-image: url("../images/icon-birth.svg")
+    &.-gender:before
+      background-image: url("../images/icon-gender.svg")
+    &.-email:before
+      background-image: url("../images/icon-mail.svg")
+    &.-phone:before
+      background-image: url("../images/icon-phone.svg")
+
