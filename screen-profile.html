@@ -14,21 +14,45 @@
     <header class="top-menu">
       <a class="icon -back"></a><span class="title">Meu Perfil</span><a class="icon -edit"></a>
     </header>
-    <div class="avatar"></div>
-    <h2 class="name">
-      Thais Lorenzini
-    </h2>
-    <label class="input-label" for="birthday">Nascimento</label><input class="input-text" id="birthday" type="text" value="26/10/1985" /><select>
-      <option>
-        Feminino
-      </option>
-      <option>
-        Masculino
-      </option>
-      <option>
-        Outro
-      </option>
-    </select><input class="input-text" type="text" value="thais.lorenzini@gmail.com" /><input class="input-text" type="text" value="+55 61 98143-7808" /><label class="input-label" for="range">R$ por consulta</label><input type="range" />
+    <div class="wrapper">
+      <div class="avatar"></div>
+      <h2 class="name">
+        Thais Lorenzini
+      </h2>
+      <div class="input-text -birthday">
+        <input id="birthday" type="text" value="26/10/1985" />
+      </div>
+      <div class="input-select -gender">
+        <select>
+          <option>
+            Feminino
+          </option>
+          <option>
+            Masculino
+          </option>
+          <option>
+            Outro
+          </option>
+        </select>
+      </div>
+      <div class="input-text -email">
+        <input type="text" value="thais.lorenzini@gmail.com" />
+      </div>
+      <div class="input-text -phone">
+        <input type="text" value="+55 61 98143-7808" />
+      </div>
+      <div class="input-select">
+        <select>
+          <option>
+            Particular
+          </option>
+          <option>
+            Público
+          </option>
+        </select>
+      </div>
+      <label class="input-label" for="range">R$ por consulta</label><input type="range" />
+    </div>
     <div class="accordion">
       <span class="title">Plano de Saúde</span>
     </div>

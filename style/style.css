@@ -252,6 +252,72 @@ body {
   background-image: url("../images/icon-pencil.svg");
 }
 
+.accordion-container {
+  background-color: #f0f0f0;
+  padding-right: 64px;
+  padding-left: 32px;
+  padding-bottom: 16px;
+}
+
+.accordion-container > .accordion {
+  border-top: 1px solid #9499B7;
+  margin-top: 16px;
+}
+
+.accordion-container > .accordion:first-child {
+  border-top: none;
+  margin-top: none;
+}
+
+.accordion-container > .accordion .icontext {
+  color: #66809F;
+  font-size: 12px;
+  line-height: 36px;
+  height: 36px;
+  padding-left: 24px;
+}
+
+.accordion-container > .accordion .icontext.-add, .accordion-container > .accordion .icontext.-addperson {
+  cursor: pointer;
+}
+
+.accordion-container > .accordion > .title {
+  height: 48px;
+  line-height: 48px;
+  margin: 0;
+  font-size: 14px;
+  color: #153563;
+  border-bottom: 1px solid #9499B7;
+  background-image: url("../images/icon-select-down.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 12px;
+}
+
+.accordion-container > .accordion > .list {
+  padding-left: 32px;
+}
+
+.accordion-container > .accordion > .list > li {
+  border-bottom: 1px solid #9499B7;
+}
+
+.accordion-container > .accordion > .list > li:last-child {
+  border-bottom: none;
+}
+
+.accordion-container > .accordion > .list > li > h3 {
+  height: 48px;
+  line-height: 48px;
+  margin: 0;
+  font-size: 14px;
+  color: #153563;
+}
+
+.accordion-container > .accordion > .list > li > ul {
+  margin-top: -8px;
+}
+
 .button {
   border: none;
   outline: none;
@@ -388,12 +454,16 @@ body {
   background-image: url("../images/sign-up-active.svg");
 }
 
-.screen-profile {
+.screen-profile > .accordion-container {
+  margin-top: 16px;
+}
+
+.screen-profile > .wrapper {
   padding-left: 64px;
   padding-right: 64px;
 }
 
-.screen-profile:before {
+.screen-profile > .wrapper:before {
   content: '';
   background-color: #D43649;
   height: 144px;
@@ -403,7 +473,7 @@ body {
   width: 100vw;
 }
 
-.screen-profile > .avatar {
+.screen-profile > .wrapper > .avatar {
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -418,18 +488,17 @@ body {
   margin-left: auto;
 }
 
-.screen-profile > .name {
+.screen-profile > .wrapper > .name {
   font-size: 21px;
   color: #D43649;
   text-align: center;
-  font-weight: 400;
   margin-top: 1rem;
   margin-bottom: 2rem;
   width: 100%;
 }
 
-.screen-profile > .input-text:before,
-.screen-profile > .input-select:before {
+.screen-profile > .wrapper > .input-text:before,
+.screen-profile > .wrapper > .input-select:before {
   content: '';
   position: absolute;
   width: 48px;
@@ -441,22 +510,22 @@ body {
   background-repeat: no-repeat;
 }
 
-.screen-profile > .input-text.-birthday:before,
-.screen-profile > .input-select.-birthday:before {
+.screen-profile > .wrapper > .input-text.-birthday:before,
+.screen-profile > .wrapper > .input-select.-birthday:before {
   background-image: url("../images/icon-birth.svg");
 }
 
-.screen-profile > .input-text.-gender:before,
-.screen-profile > .input-select.-gender:before {
+.screen-profile > .wrapper > .input-text.-gender:before,
+.screen-profile > .wrapper > .input-select.-gender:before {
   background-image: url("../images/icon-gender.svg");
 }
 
-.screen-profile > .input-text.-email:before,
-.screen-profile > .input-select.-email:before {
+.screen-profile > .wrapper > .input-text.-email:before,
+.screen-profile > .wrapper > .input-select.-email:before {
   background-image: url("../images/icon-mail.svg");
 }
 
-.screen-profile > .input-text.-phone:before,
-.screen-profile > .input-select.-phone:before {
+.screen-profile > .wrapper > .input-text.-phone:before,
+.screen-profile > .wrapper > .input-select.-phone:before {
   background-image: url("../images/icon-phone.svg");
 }

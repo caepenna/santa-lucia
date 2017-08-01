@@ -1,0 +1,51 @@
+=accordion-item
+  height: 48px
+  line-height: 48px
+  margin: 0
+  font-size: $font-size-base
+  color: $color-darkblue
+
+.accordion-container
+  background-color: hsl(0, 0%, 94%)
+  padding-right: 64px
+  padding-left: 32px
+  padding-bottom: 16px
+
+  > .accordion
+    border-top: 1px solid $color-coolgray-light
+    margin-top: 16px
+
+    &:first-child
+      border-top: none
+      margin-top: none
+
+    .icontext
+      color: $color-coolgray
+      font-size: $font-size-deci
+      line-height: 36px
+      height: 36px
+      padding-left: 24px
+      &.-add,
+      &.-addperson
+        cursor: pointer
+
+    > .title
+      +accordion-item
+      border-bottom: 1px solid $color-coolgray-light
+      background-image: url("../images/icon-select-down.svg")
+      background-repeat: no-repeat
+      background-position: right center
+      background-size: 12px
+
+    > .list
+      padding-left: 32px
+      
+
+      > li
+        border-bottom: 1px solid $color-coolgray-light
+        &:last-child
+          border-bottom: none
+        > h3
+          +accordion-item
+        > ul
+          margin-top: -8px

@@ -77,28 +77,42 @@ html
         span.title Meu Perfil
         a.icon.-edit
 
-      .avatar
-      h2.name Thais Lorenzini
-      .input-text.-birthday
-        input#birthday type="text" value="26/10/1985"
-      .input-select.-gender
-        select
-          option Feminino
-          option Masculino
-          option Outro
-      .input-text.-email
-        input type="text" value="thais.lorenzini@gmail.com"
-      .input-text.-phone
-        input type="text" value="+55 61 98143-7808"
-      .input-select
-        select
-          option Particular
-          option Público
-      label.input-label for="range" R$ por consulta
-      input type="range"
+      .wrapper
+        .avatar
+        h2.name Thais Lorenzini
+        .input-text.-birthday
+          input#birthday type="text" value="26/10/1985"
+        .input-select.-gender
+          select
+            option Feminino
+            option Masculino
+            option Outro
+        .input-text.-email
+          input type="text" value="thais.lorenzini@gmail.com"
+        .input-text.-phone
+          input type="text" value="+55 61 98143-7808"
+        .input-select
+          select
+            option Particular
+            option Público
+        label.input-label for="range" R$ por consulta
+        input type="range"
 
-      .accordion
-        span.title Plano de Saúde
-
-      .accordion
-        span.title Formas de Pagamento
+      .accordion-container
+        .accordion
+          h2.title Plano de Saúde
+          ul.list
+            li
+              h3.-photo Carteirinha
+            li
+              h3 Dependentes:
+              ul
+                li.icontext.-check Miguel Lorenzini
+                li.icontext.-check Vera Lúcia Lorenzini
+                li.icontext.-addperson Novo Dependente
+        .accordion
+          h2.title Formas de pagamento
+          ul.list
+            li
+              h3.-photo Cartão cadastrado
+            li.icontext.-add Adicionar forma de pagamento
