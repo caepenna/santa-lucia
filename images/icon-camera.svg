@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard Copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="40.538 36.9997 40.538 0.5167 0 0.5167 5.42101086e-20 36.9997 40.538 36.9997"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-3">
+            <g id="Page-1" transform="translate(4.000000, 5.000000)">
+                <path d="M20.2686,14.7826 C23.8506,14.7826 26.7546,17.6866 26.7546,21.2686 C26.7546,24.8506 23.8506,27.7556 20.2686,27.7556 C16.6866,27.7556 13.7836,24.8506 13.7836,21.2686 C13.7836,17.6866 16.6866,14.7826 20.2686,14.7826" id="Fill-1" fill="#CCCCCC"></path>
+                <g id="Group-5" transform="translate(0.000000, 0.484000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-4"></g>
+                    <path d="M20.2686,30.9197 C14.6746,30.9197 10.1346,26.3787 10.1346,20.7847 C10.1346,15.1907 14.6746,10.6497 20.2686,10.6497 C25.8636,10.6497 30.4036,15.1907 30.4036,20.7847 C30.4036,26.3787 25.8636,30.9197 20.2686,30.9197 L20.2686,30.9197 Z M14.1886,0.5167 L10.4796,4.5697 L4.0536,4.5697 C1.8246,4.5697 -0.0004,6.3947 -0.0004,8.6237 L-0.0004,32.9457 C-0.0004,35.1757 1.8246,36.9997 4.0536,36.9997 L36.4846,36.9997 C38.7136,36.9997 40.5386,35.1757 40.5386,32.9457 L40.5386,8.6237 C40.5386,6.3947 38.7136,4.5697 36.4846,4.5697 L30.0586,4.5697 L26.3496,0.5167 L14.1886,0.5167 Z" id="Fill-3" fill="#CCCCCC" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

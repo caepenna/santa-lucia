@@ -25,10 +25,19 @@
       font-size: $font-size-deci
       line-height: 36px
       height: 36px
-      padding-left: 24px
+      padding-left: 28px
+      background-image: url("../images/icon-coolgray-check.svg")
+      background-repeat: no-repeat
+      background-position: left center
+      background-size: 24px
       &.-add,
       &.-addperson
         cursor: pointer
+      &.-add
+        background-image: url("../images/icon-coolgray-add.svg")
+      &.-addperson
+        background-image: url("../images/icon-coolgray-addperson.svg")
+
 
     > .title
       +accordion-item
@@ -38,9 +47,14 @@
       background-position: right center
       background-size: 12px
 
+    .-photo
+      background-image: url("../images/icon-camera.svg")
+      background-repeat: no-repeat
+      background-position: right center
+      background-size: 24px
+
     > .list
-      padding-left: 32px
-      
+      padding-left: 32px      
 
       > li
         border-bottom: 1px solid $color-coolgray-light

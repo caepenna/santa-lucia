@@ -275,11 +275,23 @@ body {
   font-size: 12px;
   line-height: 36px;
   height: 36px;
-  padding-left: 24px;
+  padding-left: 28px;
+  background-image: url("../images/icon-coolgray-check.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 24px;
 }
 
 .accordion-container > .accordion .icontext.-add, .accordion-container > .accordion .icontext.-addperson {
   cursor: pointer;
+}
+
+.accordion-container > .accordion .icontext.-add {
+  background-image: url("../images/icon-coolgray-add.svg");
+}
+
+.accordion-container > .accordion .icontext.-addperson {
+  background-image: url("../images/icon-coolgray-addperson.svg");
 }
 
 .accordion-container > .accordion > .title {
@@ -293,6 +305,13 @@ body {
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 12px;
+}
+
+.accordion-container > .accordion .-photo {
+  background-image: url("../images/icon-camera.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 24px;
 }
 
 .accordion-container > .accordion > .list {

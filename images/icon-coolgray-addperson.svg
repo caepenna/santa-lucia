@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="17.7397 34 34.619 34 34.619 0.241 17.7397 0.241 0.8604 0.241 0.8604 34"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy">
+            <g id="Page-1" transform="translate(0.000000, 7.000000)">
+                <g id="Group-3" transform="translate(13.000000, 0.758900)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M0.8604,31.187 C0.8604,25.56 12.1134,22.465 17.7394,22.465 C23.3664,22.465 34.6194,25.56 34.6194,31.187 L34.6194,34 L0.8604,34 L0.8604,31.187 Z M26.1794,8.681 C26.1794,13.351 22.4094,17.121 17.7394,17.121 C13.0694,17.121 9.2994,13.351 9.2994,8.681 C9.2994,4.011 13.0694,0.241 17.7394,0.241 C22.4094,0.241 26.1794,4.011 26.1794,8.681 L26.1794,8.681 Z" id="Fill-1" fill="#66809F" mask="url(#mask-2)"></path>
+                </g>
+                <path d="M9,25.263 L9,7" id="Stroke-4" stroke="#373C4D" stroke-width="1.567"></path>
+                <path d="M0,16 L18.262,16" id="Stroke-6" stroke="#373C4D" stroke-width="1.567"></path>
+            </g>
+        </g>
+    </g>
+</svg>
