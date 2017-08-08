@@ -112,7 +112,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   align-content: flex-start;
 }
 
@@ -124,7 +124,7 @@ body {
   overflow-y: scroll;
   display: block;
   background-color: #fff;
-  margin: 8rem;
+  margin: 2rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
@@ -245,11 +245,28 @@ body {
 }
 
 .top-menu > .icon.-back {
-  background-image: url("../images/icon-left.svg");
+  background-image: url("../images/icon-white-left.svg");
 }
 
 .top-menu > .icon.-edit {
-  background-image: url("../images/icon-pencil.svg");
+  background-image: url("../images/icon-white-pencil.svg");
+}
+
+.top-menu.-gray {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #373C4D;
+}
+
+.top-menu.-gray > .title > span {
+  color: #D43649;
+}
+
+.top-menu.-gray > .icon.-back {
+  background-image: url("../images/icon-dark-left.svg");
+}
+
+.top-menu.-gray > .icon.-edit {
+  background-image: url("../images/icon-dark-pencil.svg");
 }
 
 .accordion-container {
@@ -338,6 +355,30 @@ body {
   margin-top: -8px;
 }
 
+.toggle-buttons {
+  display: flex;
+}
+
+.toggle-buttons > .button {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.toggle-buttons > .button:first-child {
+  margin-left: 0;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.toggle-buttons > .button:last-child {
+  margin-right: 0;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.toggle-buttons > .button.-active {
+  background-color: #373C4D;
+  color: #fff;
+}
+
 .button {
   border: none;
   outline: none;
@@ -353,11 +394,11 @@ body {
   line-height: 28px;
   font-size: 14px;
   color: #373C4D;
-  background-color: #f0f0f0;
+  background-color: #e6e6e6;
 }
 
 .button:active {
-  background-color: #d8d8d8;
+  background-color: #cccccc;
 }
 
 .button.-right, .button.-left {
@@ -548,4 +589,25 @@ body {
 .screen-profile > .wrapper > .input-text.-phone:before,
 .screen-profile > .wrapper > .input-select.-phone:before {
   background-image: url("../images/icon-phone.svg");
+}
+
+.screen-schedule > .wrapper {
+  padding-right: 1rem;
+  padding-left: 4rem;
+}
+
+.screen-schedule > .wrapper > .toggle-buttons {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.screen-schedule > .hero {
+  margin-bottom: -1rem;
+  width: 100%;
+  height: 14rem;
+  background-color: #e6e6e6;
+  background-image: url("../images/schedule-hero.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
 }

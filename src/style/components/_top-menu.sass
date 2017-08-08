@@ -25,6 +25,17 @@
       background-color: rgba(#000, 0.1)
 
     &.-back
-      background-image: url("../images/icon-left.svg")
+      background-image: url("../images/icon-white-left.svg")
     &.-edit
-      background-image: url("../images/icon-pencil.svg")
+      background-image: url("../images/icon-white-pencil.svg")
+
+  &.-gray
+    background-color: rgba(#000, 0.05)
+    color: $color-coolgray-dark
+    > .title > span
+      color: $color-highlight
+    > .icon
+      &.-back
+        background-image: url("../images/icon-dark-left.svg")
+      &.-edit
+        background-image: url("../images/icon-dark-pencil.svg")
