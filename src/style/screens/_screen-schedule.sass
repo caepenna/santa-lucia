@@ -1,13 +1,5 @@
 .screen-schedule
 
-
-  > .wrapper
-    padding-right: 1rem
-    padding-left: 4rem
-    > .toggle-buttons
-      margin-top: 2.5rem
-      margin-bottom: 1.5rem
-
   > .hero
     margin-bottom: -1rem
     width: 100%
@@ -17,3 +9,38 @@
     background-repeat: no-repeat
     background-size: 100%
     background-position: center center
+
+  > .wrapper
+    padding-right: 1rem
+    padding-left: 4rem
+    > .toggle-buttons
+      margin-top: 2.5rem
+      margin-bottom: 1.5rem
+
+    > .input-text,
+    > .input-select
+      &:before
+        content: ''
+        position: absolute
+        width: 48px
+        height: 48px
+        display: block
+        left: -48px
+        background-position: center
+        background-size: 100%
+        background-repeat: no-repeat
+      &.-address:before
+        background-image: url("../images/icons/dark-location.svg")
+      &.-shift:before
+        background-image: url("../images/icons/dark-shift.svg")
+      &.-specialization:before
+        background-image: url("../images/icons/dark-stethoscope.svg")
+      &.-disabled
+        select
+          color: hsl(0, 0%, 60%)
+        &.-address:before
+            background-image: url("../images/icons/light-location.svg")
+        &.-shift:before
+          background-image: url("../images/icons/light-shift.svg")
+        &.-specialization:before
+          background-image: url("../images/icons/light-stethoscope.svg")

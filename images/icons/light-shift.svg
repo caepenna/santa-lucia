@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-light-shift</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-light-shift" fill="#999999">
+            <path d="M31.517,43.992 C29.246,43.992 27.113,43.368 25.279,42.308 C29.009,40.15 31.517,36.133 31.517,31.516 C31.517,26.9 29.009,22.884 25.279,20.725 C27.113,19.665 29.246,19.041 31.517,19.041 C38.403,19.041 43.993,24.63 43.993,31.516 C43.993,38.403 38.403,43.992 31.517,43.992 L31.517,43.992 Z M48.151,24.635 L48.151,14.883 L38.399,14.883 L31.517,8 L24.635,14.883 L14.883,14.883 L14.883,24.635 L8,31.516 L14.883,38.399 L14.883,48.151 L24.635,48.151 L31.517,55.033 L38.399,48.151 L48.151,48.151 L48.151,38.399 L55.033,31.516 L48.151,24.635 Z" id="Fill-6"></path>
+        </g>
+    </g>
+</svg>

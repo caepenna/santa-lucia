@@ -192,7 +192,7 @@ body {
   color: #373C4D;
   font-size: 14px;
   font-family: "Objektiv Mk", Helvetica, sans-serif;
-  background-image: url("../images/icon-select-down.svg");
+  background-image: url("../images/icons/select-down.svg");
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 12px;
@@ -245,11 +245,11 @@ body {
 }
 
 .top-menu > .icon.-back {
-  background-image: url("../images/icon-white-left.svg");
+  background-image: url("../images/icons/white-left.svg");
 }
 
 .top-menu > .icon.-edit {
-  background-image: url("../images/icon-white-pencil.svg");
+  background-image: url("../images/icons/white-pencil.svg");
 }
 
 .top-menu.-gray {
@@ -262,11 +262,11 @@ body {
 }
 
 .top-menu.-gray > .icon.-back {
-  background-image: url("../images/icon-dark-left.svg");
+  background-image: url("../images/icons/dark-left.svg");
 }
 
 .top-menu.-gray > .icon.-edit {
-  background-image: url("../images/icon-dark-pencil.svg");
+  background-image: url("../images/icons/dark-pencil.svg");
 }
 
 .accordion-container {
@@ -293,7 +293,7 @@ body {
   line-height: 36px;
   height: 36px;
   padding-left: 28px;
-  background-image: url("../images/icon-coolgray-check.svg");
+  background-image: url("../images/icons/coolgray-check.svg");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 24px;
@@ -304,11 +304,11 @@ body {
 }
 
 .accordion-container > .accordion .icontext.-add {
-  background-image: url("../images/icon-coolgray-add.svg");
+  background-image: url("../images/icons/coolgray-add.svg");
 }
 
 .accordion-container > .accordion .icontext.-addperson {
-  background-image: url("../images/icon-coolgray-addperson.svg");
+  background-image: url("../images/icons/coolgray-addperson.svg");
 }
 
 .accordion-container > .accordion > .title {
@@ -318,14 +318,14 @@ body {
   font-size: 14px;
   color: #153563;
   border-bottom: 1px solid #9499B7;
-  background-image: url("../images/icon-select-down.svg");
+  background-image: url("../images/icons/select-down.svg");
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 12px;
 }
 
 .accordion-container > .accordion .-photo {
-  background-image: url("../images/icon-camera.svg");
+  background-image: url("../images/icons/camera.svg");
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 24px;
@@ -573,22 +573,33 @@ body {
 
 .screen-profile > .wrapper > .input-text.-birthday:before,
 .screen-profile > .wrapper > .input-select.-birthday:before {
-  background-image: url("../images/icon-birth.svg");
+  background-image: url("../images/icons/birth.svg");
 }
 
 .screen-profile > .wrapper > .input-text.-gender:before,
 .screen-profile > .wrapper > .input-select.-gender:before {
-  background-image: url("../images/icon-gender.svg");
+  background-image: url("../images/icons/gender.svg");
 }
 
 .screen-profile > .wrapper > .input-text.-email:before,
 .screen-profile > .wrapper > .input-select.-email:before {
-  background-image: url("../images/icon-mail.svg");
+  background-image: url("../images/icons/mail.svg");
 }
 
 .screen-profile > .wrapper > .input-text.-phone:before,
 .screen-profile > .wrapper > .input-select.-phone:before {
-  background-image: url("../images/icon-phone.svg");
+  background-image: url("../images/icons/phone.svg");
+}
+
+.screen-schedule > .hero {
+  margin-bottom: -1rem;
+  width: 100%;
+  height: 14rem;
+  background-color: #e6e6e6;
+  background-image: url("../images/schedule-hero.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
 }
 
 .screen-schedule > .wrapper {
@@ -601,13 +612,50 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.screen-schedule > .hero {
-  margin-bottom: -1rem;
-  width: 100%;
-  height: 14rem;
-  background-color: #e6e6e6;
-  background-image: url("../images/schedule-hero.svg");
-  background-repeat: no-repeat;
+.screen-schedule > .wrapper > .input-text:before,
+.screen-schedule > .wrapper > .input-select:before {
+  content: '';
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  display: block;
+  left: -48px;
+  background-position: center;
   background-size: 100%;
-  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.screen-schedule > .wrapper > .input-text.-address:before,
+.screen-schedule > .wrapper > .input-select.-address:before {
+  background-image: url("../images/icons/dark-location.svg");
+}
+
+.screen-schedule > .wrapper > .input-text.-shift:before,
+.screen-schedule > .wrapper > .input-select.-shift:before {
+  background-image: url("../images/icons/dark-shift.svg");
+}
+
+.screen-schedule > .wrapper > .input-text.-specialization:before,
+.screen-schedule > .wrapper > .input-select.-specialization:before {
+  background-image: url("../images/icons/dark-stethoscope.svg");
+}
+
+.screen-schedule > .wrapper > .input-text.-disabled select,
+.screen-schedule > .wrapper > .input-select.-disabled select {
+  color: #999999;
+}
+
+.screen-schedule > .wrapper > .input-text.-disabled.-address:before,
+.screen-schedule > .wrapper > .input-select.-disabled.-address:before {
+  background-image: url("../images/icons/light-location.svg");
+}
+
+.screen-schedule > .wrapper > .input-text.-disabled.-shift:before,
+.screen-schedule > .wrapper > .input-select.-disabled.-shift:before {
+  background-image: url("../images/icons/light-shift.svg");
+}
+
+.screen-schedule > .wrapper > .input-text.-disabled.-specialization:before,
+.screen-schedule > .wrapper > .input-select.-disabled.-specialization:before {
+  background-image: url("../images/icons/light-stethoscope.svg");
 }
