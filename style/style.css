@@ -573,22 +573,22 @@ body {
 
 .screen-profile > .wrapper > .input-text.-birthday:before,
 .screen-profile > .wrapper > .input-select.-birthday:before {
-  background-image: url("../images/icons/birth.svg");
+  background-image: url("../images/icons/coolgray-birth.svg");
 }
 
 .screen-profile > .wrapper > .input-text.-gender:before,
 .screen-profile > .wrapper > .input-select.-gender:before {
-  background-image: url("../images/icons/gender.svg");
+  background-image: url("../images/icons/coolgray-gender.svg");
 }
 
 .screen-profile > .wrapper > .input-text.-email:before,
 .screen-profile > .wrapper > .input-select.-email:before {
-  background-image: url("../images/icons/mail.svg");
+  background-image: url("../images/icons/coolgray-mail.svg");
 }
 
 .screen-profile > .wrapper > .input-text.-phone:before,
 .screen-profile > .wrapper > .input-select.-phone:before {
-  background-image: url("../images/icons/phone.svg");
+  background-image: url("../images/icons/coolgray-phone.svg");
 }
 
 .screen-schedule > .hero {
@@ -621,7 +621,7 @@ body {
   display: block;
   left: -48px;
   background-position: center;
-  background-size: 100%;
+  background-size: 70%;
   background-repeat: no-repeat;
 }
 
