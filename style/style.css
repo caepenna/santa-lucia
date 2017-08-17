@@ -4,6 +4,12 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: 'Objektiv Mk';
+  src: url("../fonts/ObjektivMk1_Trial_Md.ttf");
+  font-weight: 500;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -379,12 +385,31 @@ body {
   color: #fff;
 }
 
+.schedule-agenda > .title {
+  color: #D43649;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.schedule-agenda > ul > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #cccccc;
+}
+
+.schedule-agenda > ul > li > span {
+  color: #373C4D;
+}
+
 .button {
   border: none;
   outline: none;
   border-radius: 14px;
   padding: 0 1rem;
-  width: 100%;
   display: inline-block;
   white-space: nowrap;
   vertical-align: middle;
@@ -399,6 +424,10 @@ body {
 
 .button:active {
   background-color: #cccccc;
+}
+
+.button.-full {
+  width: 100%;
 }
 
 .button.-right, .button.-left {
@@ -658,4 +687,9 @@ body {
 .screen-schedule > .wrapper > .input-text.-disabled.-specialization:before,
 .screen-schedule > .wrapper > .input-select.-disabled.-specialization:before {
   background-image: url("../images/icons/light-stethoscope.svg");
+}
+
+.screen-schedule2 > .wrapper {
+  padding-right: 1rem;
+  padding-left: 4rem;
 }
