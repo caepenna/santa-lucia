@@ -474,6 +474,49 @@ body {
   color: #373C4D;
 }
 
+.range-selector {
+  height: 4px;
+  background-color: #f0f0f0;
+  border-radius: 2px;
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.range-selector > .fill {
+  position: absolute;
+  height: 4px;
+  background-color: #9499B7;
+  left: 10%;
+  right: 40%;
+  z-index: 1;
+}
+
+.range-selector > .from,
+.range-selector > .to {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: #D43649;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  z-index: 2;
+  color: #66809F;
+  font-size: 12px;
+  line-height: 3rem;
+}
+
+.range-selector > .from {
+  left: 10%;
+}
+
+.range-selector > .to {
+  left: 60%;
+}
+
 .button {
   border: none;
   outline: none;
