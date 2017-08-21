@@ -801,6 +801,33 @@ body {
   background-image: url("../images/icons/light-stethoscope.svg");
 }
 
+.screen-schedule2 > .doctors {
+  margin-top: 3.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: auto;
+}
+
+.screen-schedule2 > .doctors > li {
+  width: 2.5rem;
+  min-width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin: 0.5rem;
+  background-image: url("../images/avatar-doctor.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.screen-schedule2 > .doctors > li.-active {
+  width: 4rem;
+  min-width: 4rem;
+  height: 4rem;
+}
+
 .screen-schedule2 > .wrapper {
   padding-right: 1rem;
   padding-left: 4rem;
