@@ -134,6 +134,75 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
+.tab-navigation {
+  background-color: #373C4D;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.tab-navigation > a {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 0.5rem;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #373C4D;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 10px;
+  transition: all 0.2s ease;
+}
+
+.tab-navigation > a.-home {
+  background-image: url("../images/icons/coolgray-home.svg");
+}
+
+.tab-navigation > a.-history {
+  background-image: url("../images/icons/coolgray-history.svg");
+}
+
+.tab-navigation > a.-add {
+  background-image: url("../images/icons/coolgray-addagenda.svg");
+}
+
+.tab-navigation > a.-profile {
+  background-image: url("../images/icons/coolgray-user.svg");
+}
+
+.tab-navigation > a.-notifications {
+  background-image: url("../images/icons/coolgray-bell.svg");
+}
+
+.tab-navigation > a.-notifications.-hasnotifications {
+  background-image: url("../images/icons/red-bell.svg");
+}
+
+.tab-navigation > a.-active {
+  transform: scale(1.3);
+}
+
+.tab-navigation > a.-active.-home {
+  background-image: url("../images/icons/white-home.svg");
+}
+
+.tab-navigation > a.-active.-history {
+  background-image: url("../images/icons/white-history.svg");
+}
+
+.tab-navigation > a.-active.-add {
+  background-image: url("../images/icons/white-addagenda.svg");
+}
+
+.tab-navigation > a.-active.-profile {
+  background-image: url("../images/icons/white-user.svg");
+}
+
+.tab-navigation > a.-active.-notifications {
+  background-image: url("../images/icons/white-bell.svg");
+}
+
 .input-text {
   position: relative;
 }

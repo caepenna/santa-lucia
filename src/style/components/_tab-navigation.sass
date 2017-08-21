@@ -1,0 +1,41 @@
+.tab-navigation
+  background-color: $color-coolgray-dark
+  height: 3rem
+  display: flex
+  justify-content: center
+  > a
+    width: 3rem
+    height: 3rem
+    margin: 0 0.5rem
+    background-size: 100%
+    background-position: center
+    background-repeat: no-repeat
+    color: $color-coolgray-dark
+    text-align: center
+    line-height: 3rem
+    font-size: $font-size-centi
+    transition: all 0.2s ease
+    &.-home
+      background-image: url("../images/icons/coolgray-home.svg")
+    &.-history
+      background-image: url("../images/icons/coolgray-history.svg")
+    &.-add
+      background-image: url("../images/icons/coolgray-addagenda.svg")
+    &.-profile
+      background-image: url("../images/icons/coolgray-user.svg")
+    &.-notifications
+      background-image: url("../images/icons/coolgray-bell.svg")
+      &.-hasnotifications
+        background-image: url("../images/icons/red-bell.svg")
+    &.-active
+      transform: scale(1.3)
+      &.-home
+        background-image: url("../images/icons/white-home.svg")
+      &.-history
+        background-image: url("../images/icons/white-history.svg")
+      &.-add
+        background-image: url("../images/icons/white-addagenda.svg")
+      &.-profile
+        background-image: url("../images/icons/white-user.svg")
+      &.-notifications
+        background-image: url("../images/icons/white-bell.svg")
