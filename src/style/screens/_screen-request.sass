@@ -1,0 +1,91 @@
+.screen-request
+  padding-top: 5rem
+
+  > .wrapper
+    padding-left: 3rem
+    padding-right: 3rem
+
+    > .toggle-buttons
+      margin-bottom: 1.5rem
+
+    > .specialties
+      position: relative
+
+      > .title
+        text-align: center
+        color: $color-coolgray-dark
+
+      > .next
+        position: absolute
+        bottom: 0
+        z-index: 2
+        background-color: $color-coolgray-xlight
+
+      > .list
+        display: flex
+        flex-wrap: wrap
+
+        > .item
+          border-radius: 4px
+          background-color: hsl(0, 0, 92%)
+          width: calc(50% - 0.25rem)
+          margin: 0.25rem
+          height: 7rem
+          text-align: center
+          color: $color-coolgray-dark
+          background-size: 6rem
+          background-position: center top
+          background-repeat: no-repeat
+          display: flex
+          align-items: flex-end
+          position: relative
+
+          > .notification
+            background-color: $color-highlight
+            top: 0
+            left: 0
+            width: 2rem
+            height: 2rem
+            position: absolute
+            box-shadow: 0 2px 4px rgba(#000, 0.2)
+            border-radius: 50%
+            color: #fff
+            line-height: 2rem
+
+          > span
+            width: 100%
+            margin-bottom: 0.5rem
+
+          &:nth-child(odd)
+            margin-left: 0
+          &:nth-child(even)
+            margin-right: 0
+
+          &.-cardio
+            background-image: url("../images/icons/specialty-cardio.svg")
+          &.-clinic
+            background-image: url("../images/icons/specialty-clinic.svg")
+          &.-derma
+            background-image: url("../images/icons/specialty-derma.svg")
+          &.-gineco
+            background-image: url("../images/icons/specialty-gineco.svg")
+          &.-nutri
+            background-image: url("../images/icons/specialty-nutri.svg")
+          &.-oftal
+            background-image: url("../images/icons/specialty-oftal.svg")
+
+
+          &.-active
+            background-color: rgba($color-highlight, 0.2)
+            &.-cardio
+              background-image: url("../images/icons/specialty-cardio-active.svg")
+            &.-clinic
+              background-image: url("../images/icons/specialty-clinic-active.svg")
+            &.-derma
+              background-image: url("../images/icons/specialty-derma-active.svg")
+            &.-gineco
+              background-image: url("../images/icons/specialty-gineco-active.svg")
+            &.-nutri
+              background-image: url("../images/icons/specialty-nutri-active.svg")
+            &.-oftal
+              background-image: url("../images/icons/specialty-oftal-active.svg")

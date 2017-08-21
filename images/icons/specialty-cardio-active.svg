@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="192px" height="192px" viewBox="0 0 192 192" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>specialty-cardio-active</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="specialties" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="specialty-cardio-active">
+            <path d="M96.8779,142.854 L89.5399,136.174 C63.4809,112.543 46.2749,96.958 46.2749,77.831 C46.2749,62.245 58.5219,50 74.1069,50 C82.9109,50 91.3619,54.098 96.8779,60.575 C102.3939,54.098 110.8439,50 119.6489,50 C135.2329,50 147.4799,62.245 147.4799,77.831 C147.4799,96.958 130.2739,112.543 104.2149,136.225 L96.8779,142.854 Z" id="Fill-4" fill="#EF7466"></path>
+            <polyline id="Stroke-6" stroke="#373C4D" stroke-width="2.422" stroke-linecap="round" stroke-linejoin="round" points="39 99.124 53.888 99.124 67.686 114.473 75.989 83.02 82.531 98.621 94.609 98.621 102.157 126.048 117.255 71.445 129.585 98.873 153.781 98.873"></polyline>
+        </g>
+    </g>
+</svg>

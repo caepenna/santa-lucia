@@ -435,8 +435,8 @@ body {
 }
 
 .toggle-buttons > .button {
-  margin-left: 4px;
-  margin-right: 4px;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 .toggle-buttons > .button:first-child {
@@ -521,7 +521,7 @@ body {
   border: none;
   outline: none;
   border-radius: 14px;
-  padding: 0 1rem;
+  padding: 0 0.75rem;
   display: inline-block;
   white-space: nowrap;
   vertical-align: middle;
@@ -831,4 +831,132 @@ body {
 .screen-schedule2 > .wrapper {
   padding-right: 1rem;
   padding-left: 4rem;
+}
+
+.screen-request {
+  padding-top: 5rem;
+}
+
+.screen-request > .wrapper {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.screen-request > .wrapper > .toggle-buttons {
+  margin-bottom: 1.5rem;
+}
+
+.screen-request > .wrapper > .specialties {
+  position: relative;
+}
+
+.screen-request > .wrapper > .specialties > .title {
+  text-align: center;
+  color: #373C4D;
+}
+
+.screen-request > .wrapper > .specialties > .next {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  background-color: #cfd3de;
+}
+
+.screen-request > .wrapper > .specialties > .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.screen-request > .wrapper > .specialties > .list > .item {
+  border-radius: 4px;
+  background-color: #ebebeb;
+  width: calc(50% - 0.25rem);
+  margin: 0.25rem;
+  height: 7rem;
+  text-align: center;
+  color: #373C4D;
+  background-size: 6rem;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.screen-request > .wrapper > .specialties > .list > .item > .notification {
+  background-color: #D43649;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  color: #fff;
+  line-height: 2rem;
+}
+
+.screen-request > .wrapper > .specialties > .list > .item > span {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.screen-request > .wrapper > .specialties > .list > .item:nth-child(odd) {
+  margin-left: 0;
+}
+
+.screen-request > .wrapper > .specialties > .list > .item:nth-child(even) {
+  margin-right: 0;
+}
+
+.screen-request > .wrapper > .specialties > .list > .item.-cardio {
+  background-image: url("../images/icons/specialty-cardio.svg");
+}
+
+.screen-request > .wrapper > .specialties > .list > .item.-clinic {
+  background-image: url("../images/icons/specialty-clinic.svg");
+}
+
+.screen-request > .wrapper > .specialties > .list > .item.-derma {
+  background-image: url("../images/icons/specialty-derma.svg");
+}
+
+.screen-request > .wrapper > .specialties > .list > .item.-gineco {
+  background-image: url("../images/icons/specialty-gineco.svg");
+}
+
+.screen-request > .wrapper > .specialties > .list > .item.-nutri {
+  background-image: url("../images/icons/specialty-nutri.svg");
+}
+
+.screen-request > .wrapper > .specialties > .list > .item.-oftal {
+  background-image: url("../images/icons/specialty-oftal.svg");
+}
+
+.screen-request > .wrapper > .specialties > .list > .item.-active {
+  background-color: rgba(212, 54, 73, 0.2);
+}
+
+.screen-request > .wrapper > .specialties > .list > .item.-active.-cardio {
+  background-image: url("../images/icons/specialty-cardio-active.svg");
+}
+
+.screen-request > .wrapper > .specialties > .list > .item.-active.-clinic {
+  background-image: url("../images/icons/specialty-clinic-active.svg");
+}
+
+.screen-request > .wrapper > .specialties > .list > .item.-active.-derma {
+  background-image: url("../images/icons/specialty-derma-active.svg");
+}
+
+.screen-request > .wrapper > .specialties > .list > .item.-active.-gineco {
+  background-image: url("../images/icons/specialty-gineco-active.svg");
+}
+
+.screen-request > .wrapper > .specialties > .list > .item.-active.-nutri {
+  background-image: url("../images/icons/specialty-nutri-active.svg");
+}
+
+.screen-request > .wrapper > .specialties > .list > .item.-active.-oftal {
+  background-image: url("../images/icons/specialty-oftal-active.svg");
 }
