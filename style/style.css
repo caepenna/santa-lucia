@@ -881,6 +881,12 @@ body {
   display: flex;
   align-items: flex-end;
   position: relative;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.screen-request > .wrapper > .specialties > .list > .item:active {
+  background-color: #cfd3de;
 }
 
 .screen-request > .wrapper > .specialties > .list > .item > .notification {
