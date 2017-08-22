@@ -1,0 +1,60 @@
+.profile-wrapper
+  padding-left: 64px
+  padding-right: 64px
+  
+  &:before
+    content: ''
+    background-color: $color-highlight
+    height: 144px
+    margin-left: -64px
+    margin-right: -64px
+    display: block
+    width: 100vw
+
+  > .avatar
+    border-radius: 50%
+    width: 120px
+    height: 120px
+    border: 2px solid $color-highlight
+    margin-top: -80px
+    background-color: #fff
+    background-image: url("../images/avatar-thais.jpg")
+    background-size: 100%
+    background-position: center
+    background-repeat: no-repeat
+    margin-right: auto
+    margin-left: auto
+
+  > .name
+    font-size: $font-size-hecto
+    color: $color-highlight
+    text-align: center
+    margin-top: 1rem
+    margin-bottom: 2rem
+    width: 100%
+
+  > .label
+    +input-style
+
+  > .label,
+  > .input-text,
+  > .input-select
+    &:before
+      content: ''
+      position: absolute
+      width: 48px
+      height: 48px
+      display: block
+      left: -48px
+      background-position: center
+      background-size: 100%
+      background-repeat: no-repeat
+    &.-birthday:before
+      background-image: url("../images/icons/coolgray-birth.svg")
+    &.-gender:before
+      background-image: url("../images/icons/coolgray-gender.svg")
+    &.-email:before
+      background-image: url("../images/icons/coolgray-mail.svg")
+    &.-phone:before
+      background-image: url("../images/icons/coolgray-phone.svg")
+

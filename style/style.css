@@ -213,6 +213,7 @@ body {
   appearance: none;
   border: none;
   height: 48px;
+  line-height: 48px;
   width: 100%;
   border-bottom: 1px solid #9499B7;
   border-radius: 0;
@@ -260,6 +261,7 @@ body {
   appearance: none;
   border: none;
   height: 48px;
+  line-height: 48px;
   width: 100%;
   border-bottom: 1px solid #9499B7;
   border-radius: 0;
@@ -517,6 +519,115 @@ body {
   left: 60%;
 }
 
+.profile-wrapper {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.profile-wrapper:before {
+  content: '';
+  background-color: #D43649;
+  height: 144px;
+  margin-left: -64px;
+  margin-right: -64px;
+  display: block;
+  width: 100vw;
+}
+
+.profile-wrapper > .avatar {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #D43649;
+  margin-top: -80px;
+  background-color: #fff;
+  background-image: url("../images/avatar-thais.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.profile-wrapper > .name {
+  font-size: 21px;
+  color: #D43649;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.profile-wrapper > .label {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  height: 48px;
+  line-height: 48px;
+  width: 100%;
+  border-bottom: 1px solid #9499B7;
+  border-radius: 0;
+  background-color: transparent;
+  color: #373C4D;
+  font-size: 14px;
+  font-family: "Objektiv Mk", Helvetica, sans-serif;
+}
+
+.profile-wrapper > .label::-webkit-input-placeholder {
+  color: #373C4D;
+}
+
+.profile-wrapper > .label:-moz-placeholder {
+  color: #373C4D;
+}
+
+.profile-wrapper > .label::-moz-placeholder {
+  color: #373C4D;
+}
+
+.profile-wrapper > .label:-ms-input-placeholder {
+  color: #373C4D;
+}
+
+.profile-wrapper > .label:before,
+.profile-wrapper > .input-text:before,
+.profile-wrapper > .input-select:before {
+  content: '';
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  display: block;
+  left: -48px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.profile-wrapper > .label.-birthday:before,
+.profile-wrapper > .input-text.-birthday:before,
+.profile-wrapper > .input-select.-birthday:before {
+  background-image: url("../images/icons/coolgray-birth.svg");
+}
+
+.profile-wrapper > .label.-gender:before,
+.profile-wrapper > .input-text.-gender:before,
+.profile-wrapper > .input-select.-gender:before {
+  background-image: url("../images/icons/coolgray-gender.svg");
+}
+
+.profile-wrapper > .label.-email:before,
+.profile-wrapper > .input-text.-email:before,
+.profile-wrapper > .input-select.-email:before {
+  background-image: url("../images/icons/coolgray-mail.svg");
+}
+
+.profile-wrapper > .label.-phone:before,
+.profile-wrapper > .input-text.-phone:before,
+.profile-wrapper > .input-select.-phone:before {
+  background-image: url("../images/icons/coolgray-phone.svg");
+}
+
 .button {
   border: none;
   outline: none;
@@ -658,78 +769,6 @@ body {
 
 .screen-profile > .accordion-container {
   margin-top: 16px;
-}
-
-.screen-profile > .wrapper {
-  padding-left: 64px;
-  padding-right: 64px;
-}
-
-.screen-profile > .wrapper:before {
-  content: '';
-  background-color: #D43649;
-  height: 144px;
-  margin-left: -64px;
-  margin-right: -64px;
-  display: block;
-  width: 100vw;
-}
-
-.screen-profile > .wrapper > .avatar {
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  border: 2px solid #D43649;
-  margin-top: -80px;
-  background-color: #fff;
-  background-image: url("../images/avatar-thais.jpg");
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.screen-profile > .wrapper > .name {
-  font-size: 21px;
-  color: #D43649;
-  text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  width: 100%;
-}
-
-.screen-profile > .wrapper > .input-text:before,
-.screen-profile > .wrapper > .input-select:before {
-  content: '';
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  display: block;
-  left: -48px;
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-.screen-profile > .wrapper > .input-text.-birthday:before,
-.screen-profile > .wrapper > .input-select.-birthday:before {
-  background-image: url("../images/icons/coolgray-birth.svg");
-}
-
-.screen-profile > .wrapper > .input-text.-gender:before,
-.screen-profile > .wrapper > .input-select.-gender:before {
-  background-image: url("../images/icons/coolgray-gender.svg");
-}
-
-.screen-profile > .wrapper > .input-text.-email:before,
-.screen-profile > .wrapper > .input-select.-email:before {
-  background-image: url("../images/icons/coolgray-mail.svg");
-}
-
-.screen-profile > .wrapper > .input-text.-phone:before,
-.screen-profile > .wrapper > .input-select.-phone:before {
-  background-image: url("../images/icons/coolgray-phone.svg");
 }
 
 .screen-schedule > .hero {
@@ -965,4 +1004,8 @@ body {
 
 .screen-request > .wrapper > .specialties > .list > .item.-active.-oftal {
   background-image: url("../images/icons/specialty-oftal-active.svg");
+}
+
+.screen-doctor .avatar {
+  background-image: url("../images/avatar-doctor.png");
 }
