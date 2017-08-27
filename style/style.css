@@ -559,6 +559,7 @@ body {
 }
 
 .profile-wrapper > .label {
+  position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -626,6 +627,24 @@ body {
 .profile-wrapper > .input-text.-phone:before,
 .profile-wrapper > .input-select.-phone:before {
   background-image: url("../images/icons/coolgray-phone.svg");
+}
+
+.profile-wrapper > .label.-specialty:before,
+.profile-wrapper > .input-text.-specialty:before,
+.profile-wrapper > .input-select.-specialty:before {
+  background-image: url("../images/icons/red-stethoscope.svg");
+}
+
+.profile-wrapper > .label.-contact:before,
+.profile-wrapper > .input-text.-contact:before,
+.profile-wrapper > .input-select.-contact:before {
+  background-image: url("../images/icons/red-chat.svg");
+}
+
+.profile-wrapper > .label.-history:before,
+.profile-wrapper > .input-text.-history:before,
+.profile-wrapper > .input-select.-history:before {
+  background-image: url("../images/icons/red-history.svg");
 }
 
 .button {
@@ -1006,6 +1025,66 @@ body {
   background-image: url("../images/icons/specialty-oftal-active.svg");
 }
 
-.screen-doctor .avatar {
+.screen-doctor > .profile-wrapper > .avatar {
   background-image: url("../images/avatar-doctor.png");
+}
+
+.screen-doctor > .profile-wrapper > .crm {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.screen-doctor > .profile-wrapper > .stars {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.screen-doctor > .profile-wrapper > .stars > .star {
+  width: 1rem;
+  height: 1rem;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../images/icons/star-light.svg");
+}
+
+.screen-doctor > .profile-wrapper > .stars > .star.-full {
+  background-image: url("../images/icons/star-dark.svg");
+}
+
+.screen-doctor > .profile-wrapper > .subtitle {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.screen-doctor > .profile-wrapper > .time-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: auto;
+}
+
+.screen-doctor > .profile-wrapper > .time-list > .item {
+  width: 4.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: #e6e6e6;
+  margin-right: 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #373C4D;
+  margin-bottom: 2rem;
+}
+
+.screen-doctor > .profile-wrapper > .time-list > .item.-active {
+  background-color: #373C4D;
+  color: #fff;
+}
+
+.screen-doctor > .profile-wrapper > .time-list > .item.-now {
+  background-color: #D43649;
+  color: #fff;
 }

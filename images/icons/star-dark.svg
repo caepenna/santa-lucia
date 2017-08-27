@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>star-dark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="stars" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="star-dark" fill="#373C4D">
+            <polygon id="Page-1" points="16.455 3.9999 13.445 13.3409 4 13.3409 11.701 18.8209 8.754 27.8719 16.455 22.2669 24.156 27.8719 21.209 18.8209 28.91 13.3409 19.465 13.3409"></polygon>
+        </g>
+    </g>
+</svg>
