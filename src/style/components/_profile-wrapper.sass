@@ -36,6 +36,24 @@
   > .label
     position: relative
     +input-style
+    &.-accordion
+      background-image: url("../images/icons/select-red-down.svg")
+      background-repeat: no-repeat
+      background-position: right 1.125rem
+      background-size: 12px
+      &.-up
+        background-image: url("../images/icons/select-red-up.svg")
+      &.-open
+        height: auto
+        padding-top: 1rem
+        padding-bottom: 1rem
+        > div
+          height: 1.25rem
+          line-height: 1.25rem
+          &:first-child
+            color: $color-highlight
+          > span
+            color: hsl(0, 0, 60%)
 
   > .label,
   > .input-text,

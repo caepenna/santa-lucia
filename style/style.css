@@ -591,6 +591,36 @@ body {
   color: #373C4D;
 }
 
+.profile-wrapper > .label.-accordion {
+  background-image: url("../images/icons/select-red-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 1.125rem;
+  background-size: 12px;
+}
+
+.profile-wrapper > .label.-accordion.-up {
+  background-image: url("../images/icons/select-red-up.svg");
+}
+
+.profile-wrapper > .label.-accordion.-open {
+  height: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.profile-wrapper > .label.-accordion.-open > div {
+  height: 1.25rem;
+  line-height: 1.25rem;
+}
+
+.profile-wrapper > .label.-accordion.-open > div:first-child {
+  color: #D43649;
+}
+
+.profile-wrapper > .label.-accordion.-open > div > span {
+  color: #999999;
+}
+
 .profile-wrapper > .label:before,
 .profile-wrapper > .input-text:before,
 .profile-wrapper > .input-select:before {
