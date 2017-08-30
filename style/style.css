@@ -1118,3 +1118,93 @@ body {
   background-color: #D43649;
   color: #fff;
 }
+
+.screen-dashboard > .wrapper {
+  padding: 2rem 1rem;
+}
+
+.screen-dashboard > .wrapper > .item {
+  display: flex;
+  border-radius: 0.5rem;
+  background-color: #e6e6e6;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  height: 6rem;
+}
+
+.screen-dashboard > .wrapper > .item:active {
+  background-color: #cccccc;
+}
+
+.screen-dashboard > .wrapper > .item:active > .icon {
+  opacity: 0.6;
+}
+
+.screen-dashboard > .wrapper > .item > .label {
+  text-transform: uppercase;
+  padding: 2rem;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #373C4D;
+}
+
+.screen-dashboard > .wrapper > .item > .icon {
+  min-width: 7rem;
+  min-height: 6rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  position: relative;
+}
+
+.screen-dashboard > .wrapper > .item > .icon::before {
+  content: '';
+  width: 8rem;
+  height: 7rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.screen-dashboard > .wrapper > .item.-appointment > .icon {
+  background-color: #ffd8d7;
+}
+
+.screen-dashboard > .wrapper > .item.-appointment > .icon::before {
+  background-image: url("../images/icons/dashboard-consulta.svg");
+}
+
+.screen-dashboard > .wrapper > .item.-exam > .icon {
+  background-color: #cfd3de;
+}
+
+.screen-dashboard > .wrapper > .item.-exam > .icon::before {
+  background-image: url("../images/icons/dashboard-exame.svg");
+}
+
+.screen-dashboard > .wrapper > .item.-lab > .icon {
+  background-color: #373c4d;
+}
+
+.screen-dashboard > .wrapper > .item.-lab > .icon::before {
+  background-image: url("../images/icons/dashboard-lab.svg");
+}
+
+.screen-dashboard > .wrapper > .item.-image > .icon {
+  background-color: #deddde;
+}
+
+.screen-dashboard > .wrapper > .item.-image > .icon::before {
+  background-image: url("../images/icons/dashboard-exames.svg");
+}
+
+.screen-dashboard > .wrapper > .item.-embergency > .icon {
+  background-color: #ffd8d7;
+}
+
+.screen-dashboard > .wrapper > .item.-embergency > .icon::before {
+  background-image: url("../images/icons/dashboard-emergency.svg");
+}

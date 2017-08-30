@@ -1,0 +1,62 @@
+.screen-dashboard
+  > .wrapper
+    padding: 2rem 1rem
+    > .item
+      display: flex
+      border-radius: 0.5rem
+      background-color: hsl(0, 0, 90%)
+      margin-top: 1rem
+      margin-bottom: 1rem
+      align-items: center
+      height: 6rem
+      &:active
+        background-color: hsl(0, 0, 80%)
+        > .icon
+          opacity: 0.6
+      > .label
+        text-transform: uppercase
+        padding: 2rem
+        font-size: $font-size-deci
+        line-height: 1.5
+        color: $color-coolgray-dark
+      > .icon
+        min-width: 7rem
+        min-height: 6rem
+        border-radius: 0.5rem 0 0 0.5rem
+        position: relative
+        &::before
+          content: ''
+          width: 8rem
+          height: 7rem
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          background-position: center
+          background-size: 100%
+          background-repeat: no-repeat
+      &.-appointment
+        > .icon
+          background-color: #ffd8d7
+          &::before
+            background-image: url("../images/icons/dashboard-consulta.svg")
+      &.-exam
+        > .icon
+          background-color: #cfd3de
+          &::before
+            background-image: url("../images/icons/dashboard-exame.svg")
+      &.-lab
+        > .icon
+          background-color: #373c4d
+          &::before
+            background-image: url("../images/icons/dashboard-lab.svg")
+      &.-image
+        > .icon
+          background-color: #deddde
+          &::before
+            background-image: url("../images/icons/dashboard-exames.svg")
+      &.-embergency
+        > .icon
+          background-color: #ffd8d7
+          &::before
+            background-image: url("../images/icons/dashboard-emergency.svg")
