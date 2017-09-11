@@ -1,0 +1,93 @@
+.screen-history
+  padding-top: 5rem
+
+  > .timeline
+    padding-left: 2.5rem
+    padding-right: 1rem
+    position: relative
+
+    &:before
+      content: ''
+      width: 1px
+      top: 0
+      bottom: 0
+      background-color: $color-highlight-light
+      left: 2.5rem
+      position: absolute
+
+    > .year
+      transform: translateX(-50%)
+      width: 3rem
+      height: 2rem
+      background-color: $color-highlight
+      border-radius: 1rem
+      text-align: center
+      color: #fff
+      line-height: 2rem
+      font-size: $font-size-base
+      margin-bottom: 1rem
+
+    > .month
+      font-size: $font-size-deca
+      color: $color-coolgray-dark
+      padding-left: 2.5rem
+      width: 100%
+      position: relative
+      background-image: url("../images/icons/select-red-down.svg")
+      background-repeat: no-repeat
+      background-position: right center
+      background-size: 12px
+      padding-bottom: 1.5rem
+      line-height: 1.5rem
+      > span
+        width: 1.25rem
+        height: 1.25rem
+        display: inline-block
+        margin-left: 1rem
+        text-align: center
+        font-size: $font-size-deci
+        line-height: 1.25rem
+        color: #fff
+        background-color: $color-highlight-light
+        border-radius: 50%
+      &.-open
+        background-image: url("../images/icons/select-red-up.svg")
+      &:before
+        content: ''
+        position: absolute
+        height: 1px
+        left: 0
+        right: calc(100% - 1.5rem)
+        top: 0.75rem
+        background-color: $color-highlight-light
+
+    > .date
+      display: flex
+      padding-bottom: 1.5rem
+      > .date
+        transform: translateX(-50%)
+        background: #fff
+        padding: 0.5rem
+        margin-right: 3rem
+        width: 3rem
+        text-align: center
+        color: $color-highlight
+        > div:first-child
+          font-size: $font-size-base
+        > div:nth-child(2)
+          font-size: $font-size-deci
+
+    &.-old
+      background-color: hsl(0, 0, 90%)
+      &:before
+        background-color: $color-coolgray
+      > .year
+        background-color: $color-coolgray-dark
+      > .month
+        background-image: url("../images/icons/select-down.svg")
+        > span
+          background-color: $color-coolgray
+        &.-open
+          background-image: url("../images/icons/select-up.svg")
+        &:before
+          background-color: $color-coolgray

@@ -1586,3 +1586,128 @@ body {
   background-color: #f0f0f0;
   padding-top: 5rem;
 }
+
+.screen-history {
+  padding-top: 5rem;
+}
+
+.screen-history > .timeline {
+  padding-left: 2.5rem;
+  padding-right: 1rem;
+  position: relative;
+}
+
+.screen-history > .timeline:before {
+  content: '';
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  background-color: #EF7466;
+  left: 2.5rem;
+  position: absolute;
+}
+
+.screen-history > .timeline > .year {
+  transform: translateX(-50%);
+  width: 3rem;
+  height: 2rem;
+  background-color: #D43649;
+  border-radius: 1rem;
+  text-align: center;
+  color: #fff;
+  line-height: 2rem;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.screen-history > .timeline > .month {
+  font-size: 18px;
+  color: #373C4D;
+  padding-left: 2.5rem;
+  width: 100%;
+  position: relative;
+  background-image: url("../images/icons/select-red-down.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 12px;
+  padding-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.screen-history > .timeline > .month > span {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-block;
+  margin-left: 1rem;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.25rem;
+  color: #fff;
+  background-color: #EF7466;
+  border-radius: 50%;
+}
+
+.screen-history > .timeline > .month.-open {
+  background-image: url("../images/icons/select-red-up.svg");
+}
+
+.screen-history > .timeline > .month:before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  left: 0;
+  right: calc(100% - 1.5rem);
+  top: 0.75rem;
+  background-color: #EF7466;
+}
+
+.screen-history > .timeline > .date {
+  display: flex;
+  padding-bottom: 1.5rem;
+}
+
+.screen-history > .timeline > .date > .date {
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 0.5rem;
+  margin-right: 3rem;
+  width: 3rem;
+  text-align: center;
+  color: #D43649;
+}
+
+.screen-history > .timeline > .date > .date > div:first-child {
+  font-size: 14px;
+}
+
+.screen-history > .timeline > .date > .date > div:nth-child(2) {
+  font-size: 12px;
+}
+
+.screen-history > .timeline.-old {
+  background-color: #e6e6e6;
+}
+
+.screen-history > .timeline.-old:before {
+  background-color: #66809F;
+}
+
+.screen-history > .timeline.-old > .year {
+  background-color: #373C4D;
+}
+
+.screen-history > .timeline.-old > .month {
+  background-image: url("../images/icons/select-down.svg");
+}
+
+.screen-history > .timeline.-old > .month > span {
+  background-color: #66809F;
+}
+
+.screen-history > .timeline.-old > .month.-open {
+  background-image: url("../images/icons/select-up.svg");
+}
+
+.screen-history > .timeline.-old > .month:before {
+  background-color: #66809F;
+}
