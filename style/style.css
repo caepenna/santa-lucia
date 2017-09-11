@@ -684,6 +684,7 @@ body {
   left: 0;
   bottom: 0;
   background-color: rgba(102, 128, 159, 0.66);
+  z-index: 99;
 }
 
 .alert-box > .alert {
