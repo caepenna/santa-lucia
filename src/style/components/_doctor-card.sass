@@ -2,6 +2,19 @@
   display: flex
   align-items: center
 
+  > .date
+    margin-right: 1rem
+    width: 2rem
+    color: $color-coolgray
+    text-align: center
+    background-color: hsl(0, 0, 94%)
+    padding-top: 0.5rem
+    padding-bottom: 0.5rem
+    > div:first-child
+      font-size: $font-size-deca
+    > div:nth-child(2)
+      font-size: $font-size-deci
+
   > .avatar
     width: 2.5rem
     height: 2.5rem
@@ -15,5 +28,7 @@
   > .info
     font-size: $font-size-base
     color: $color-coolgray-dark
+    > .name
+      margin-bottom: 0.25rem
     > .specialty
       color: hsl(0, 0, 60%)

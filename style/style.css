@@ -792,6 +792,24 @@ body {
   align-items: center;
 }
 
+.doctor-card > .date {
+  margin-right: 1rem;
+  width: 2rem;
+  color: #66809F;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.doctor-card > .date > div:first-child {
+  font-size: 18px;
+}
+
+.doctor-card > .date > div:nth-child(2) {
+  font-size: 12px;
+}
+
 .doctor-card > .avatar {
   width: 2.5rem;
   height: 2.5rem;
@@ -808,8 +826,62 @@ body {
   color: #373C4D;
 }
 
+.doctor-card > .info > .name {
+  margin-bottom: 0.25rem;
+}
+
 .doctor-card > .info > .specialty {
   color: #999999;
+}
+
+.next-appointments {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.next-appointments > .title {
+  color: #66809F;
+}
+
+.next-appointments > .timeline {
+  position: absolute;
+  left: 1rem;
+  top: 3rem;
+  bottom: 0;
+  width: 1px;
+  background-color: #66809F;
+  z-index: 1;
+}
+
+.next-appointments > .timeline:after {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #66809F;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.next-appointments > .doctors {
+  position: relative;
+  z-index: 2;
+}
+
+.next-appointments > .doctors > .doctor-card {
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+
+.next-appointments > .doctors > .doctor-card > .button {
+  background-color: #cfd3de;
+  color: #373C4D;
+  margin-left: 1rem;
 }
 
 .button {

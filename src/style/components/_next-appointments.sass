@@ -1,0 +1,40 @@
+.next-appointments
+  margin-top: 2rem
+  margin-left: 1rem
+  margin-right: 1rem
+  position: relative
+  padding-bottom: 2rem
+
+  > .title
+    color: $color-coolgray
+
+  > .timeline
+    position: absolute
+    left: 1rem
+    top: 3rem
+    bottom: 0
+    width: 1px
+    background-color: $color-coolgray
+    z-index: 1
+    &:after
+      content: ''
+      width: 4px
+      height: 4px
+      border-radius: 50%
+      background-color: $color-coolgray
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+
+  > .doctors
+    position: relative
+    z-index: 2
+
+    > .doctor-card
+      margin-bottom: 1rem
+      justify-content: space-between
+      > .button
+        background-color: $color-coolgray-xlight
+        color: $color-coolgray-dark
+        margin-left: 1rem
