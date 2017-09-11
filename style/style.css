@@ -927,7 +927,6 @@ body {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   color: #373C4D;
-  margin-bottom: 2rem;
 }
 
 .time-list > .item.-active {
@@ -1229,6 +1228,113 @@ body {
   background: #e6e6e6;
 }
 
+.screen-doctors {
+  padding-top: 3rem;
+}
+
+.screen-doctors > .label {
+  margin-left: 5rem;
+  border-bottom: 1px solid #b3b3b3;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: 3rem;
+  color: #373C4D;
+  background-image: url("../images/icons/select-right.svg");
+  background-size: 1rem;
+  background-position: calc(100% - 1rem) center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+}
+
+.screen-doctors > .week {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  background-color: #fafafa;
+  padding-top: 4rem;
+  margin-top: -3rem;
+  padding-bottom: 1rem;
+}
+
+.screen-doctors > .week > .day {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #373C4D;
+}
+
+.screen-doctors > .week > .day:first-child {
+  color: #cccccc;
+}
+
+.screen-doctors > .week > .day.-today {
+  color: #D43649;
+}
+
+.screen-doctors > .week > .day > div {
+  border-radius: 50%;
+  width: 1.75rem;
+  height: 1.75rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+.screen-doctors > .week > .day > div.-selected {
+  color: #fff;
+  background-color: #373C4D;
+}
+
+.screen-doctors > .specialties {
+  background-color: #D43649;
+  color: #fff;
+  height: 3rem;
+  position: relative;
+}
+
+.screen-doctors > .specialties > .title {
+  line-height: 3rem;
+  font-size: 14px;
+  margin-left: 5rem;
+  margin-right: 3rem;
+}
+
+.screen-doctors > .specialties > a {
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  top: 1rem;
+}
+
+.screen-doctors > .specialties > a.prev {
+  left: 1rem;
+  background-image: url("../images/icons/select-white-left.svg");
+}
+
+.screen-doctors > .specialties > a.next {
+  right: 1rem;
+  background-image: url("../images/icons/select-white-right.svg");
+}
+
+.screen-doctors > .list {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.screen-doctors > .list > .item {
+  margin-left: 4rem;
+  border-bottom: 1px solid #e6e6e6;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.screen-doctors > .list > .item > .doctor-card {
+  margin-left: -3.5rem;
+  margin-bottom: 1rem;
+}
+
 .screen-request {
   padding-top: 5rem;
 }
@@ -1375,6 +1481,10 @@ body {
 .screen-doctor > .profile-wrapper > .stars {
   justify-content: center;
   margin-bottom: 1.5rem;
+}
+
+.screen-doctor > .profile-wrapper > .time-list > .item {
+  margin-bottom: 2rem;
 }
 
 .screen-doctor > .profile-wrapper > .subtitle {
