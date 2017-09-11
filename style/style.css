@@ -176,7 +176,7 @@ body {
 }
 
 .tab-navigation > a.-notifications.-hasnotifications {
-  background-image: url("../images/icons/red-bell.svg");
+  background-image: url("../images/icons/orange-bell.svg");
 }
 
 .tab-navigation > a.-active {
@@ -954,6 +954,88 @@ body {
 
 .stars > .star.-full {
   background-image: url("../images/icons/star-dark.svg");
+}
+
+.side-navigation {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 3rem;
+  padding: 2rem 1rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+}
+
+.side-navigation::before {
+  content: '';
+  width: 3rem;
+  position: absolute;
+  left: -3rem;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(102, 128, 159, 0.66);
+}
+
+.side-navigation > a {
+  color: #373C4D;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  background-position: 0 center;
+  background-size: 3rem;
+  background-repeat: no-repeat;
+  padding-left: 4rem;
+  height: 3rem;
+  line-height: 3rem;
+}
+
+.side-navigation > a.-home {
+  background-image: url("../images/icons/coolgray-home.svg");
+}
+
+.side-navigation > a.-history {
+  background-image: url("../images/icons/coolgray-history.svg");
+}
+
+.side-navigation > a.-add {
+  background-image: url("../images/icons/coolgray-addagenda.svg");
+}
+
+.side-navigation > a.-profile {
+  background-image: url("../images/icons/coolgray-user.svg");
+}
+
+.side-navigation > a.-notifications {
+  background-image: url("../images/icons/coolgray-bell.svg");
+}
+
+.side-navigation > a.-notifications.-hasnotifications {
+  background-image: url("../images/icons/red-bell.svg");
+}
+
+.side-navigation > a.-active {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.side-navigation > a.-active.-home {
+  background-image: url("../images/icons/red-home.svg");
+}
+
+.side-navigation > a.-active.-history {
+  background-image: url("../images/icons/red-history.svg");
+}
+
+.side-navigation > a.-active.-add {
+  background-image: url("../images/icons/red-addagenda.svg");
+}
+
+.side-navigation > a.-active.-profile {
+  background-image: url("../images/icons/red-user.svg");
+}
+
+.side-navigation > a.-active.-notifications {
+  background-image: url("../images/icons/red-bell.svg");
 }
 
 .button {

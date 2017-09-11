@@ -1,0 +1,55 @@
+.side-navigation
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 0
+  left: 3rem
+  padding: 2rem 1rem
+  box-shadow: 0 0 12px rgba(#000, 0.6)
+  display: flex
+  flex-direction: column
+
+  &::before
+    content: ''
+    width: 3rem
+    position: absolute
+    left: -3rem
+    top: 0
+    bottom: 0
+    background-color: rgba($color-coolgray, 0.66)
+
+
+  > a
+    color: $color-coolgray-dark
+    font-size: $font-size-deca
+    margin-bottom: 1rem
+    background-position: 0 center
+    background-size: 3rem
+    background-repeat: no-repeat
+    padding-left: 4rem
+    height: 3rem
+    line-height: 3rem
+    &.-home
+      background-image: url("../images/icons/coolgray-home.svg")
+    &.-history
+      background-image: url("../images/icons/coolgray-history.svg")
+    &.-add
+      background-image: url("../images/icons/coolgray-addagenda.svg")
+    &.-profile
+      background-image: url("../images/icons/coolgray-user.svg")
+    &.-notifications
+      background-image: url("../images/icons/coolgray-bell.svg")
+      &.-hasnotifications
+        background-image: url("../images/icons/red-bell.svg")
+    &.-active
+      border-bottom: 1px solid hsl(0, 0, 90%)
+      &.-home
+        background-image: url("../images/icons/red-home.svg")
+      &.-history
+        background-image: url("../images/icons/red-history.svg")
+      &.-add
+        background-image: url("../images/icons/red-addagenda.svg")
+      &.-profile
+        background-image: url("../images/icons/red-user.svg")
+      &.-notifications
+        background-image: url("../images/icons/red-bell.svg")
