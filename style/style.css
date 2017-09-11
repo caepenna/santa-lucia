@@ -292,7 +292,7 @@ body {
 }
 
 .top-menu {
-  height: 50px;
+  height: 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -306,12 +306,25 @@ body {
 
 .top-menu > .title {
   font-size: 18px;
+  width: 100%;
+  text-align: center;
+}
+
+.top-menu > .input {
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
 }
 
 .top-menu > .icon {
-  width: 28px;
-  height: 28px;
-  margin: 11px;
+  width: 2rem;
+  min-width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -344,6 +357,16 @@ body {
 
 .top-menu.-gray > .icon.-edit {
   background-image: url("../images/icons/dark-pencil.svg");
+}
+
+.top-menu.-gray > .icon.-menu {
+  background-image: url("../images/icons/dark-menu.svg");
+}
+
+.top-menu.-gray > .icon.-search {
+  background-image: url("../images/icons/red-search.svg");
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .accordion-container {
@@ -791,6 +814,7 @@ body {
 .doctor-card {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .doctor-card > .date {
@@ -883,6 +907,54 @@ body {
   background-color: #cfd3de;
   color: #373C4D;
   margin-left: 1rem;
+}
+
+.time-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: auto;
+}
+
+.time-list > .item {
+  width: 4.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: #e6e6e6;
+  margin-right: 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #373C4D;
+  margin-bottom: 2rem;
+}
+
+.time-list > .item.-active {
+  background-color: #373C4D;
+  color: #fff;
+}
+
+.time-list > .item.-now {
+  background-color: #D43649;
+  color: #fff;
+}
+
+.stars {
+  display: flex;
+}
+
+.stars > .star {
+  width: 1rem;
+  height: 1rem;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../images/icons/star-light.svg");
+}
+
+.stars > .star.-full {
+  background-image: url("../images/icons/star-dark.svg");
 }
 
 .button {
@@ -1129,6 +1201,34 @@ body {
   padding-left: 4rem;
 }
 
+.screen-search {
+  padding-top: 5rem;
+}
+
+.screen-search > .wrapper {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.screen-search > .wrapper > .title {
+  color: #373C4D;
+  font-size: 14px;
+}
+
+.screen-search > .wrapper > .doctor-card {
+  margin-bottom: 2rem;
+}
+
+.screen-search > .wrapper > .doctor-card::after {
+  content: '';
+  height: 1px;
+  position: absolute;
+  left: 3rem;
+  right: 1rem;
+  bottom: -1rem;
+  background: #e6e6e6;
+}
+
 .screen-request {
   padding-top: 5rem;
 }
@@ -1273,58 +1373,13 @@ body {
 }
 
 .screen-doctor > .profile-wrapper > .stars {
-  margin-bottom: 1.5rem;
-  display: flex;
   justify-content: center;
-}
-
-.screen-doctor > .profile-wrapper > .stars > .star {
-  width: 1rem;
-  height: 1rem;
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-image: url("../images/icons/star-light.svg");
-}
-
-.screen-doctor > .profile-wrapper > .stars > .star.-full {
-  background-image: url("../images/icons/star-dark.svg");
+  margin-bottom: 1.5rem;
 }
 
 .screen-doctor > .profile-wrapper > .subtitle {
   margin-top: 2rem;
   margin-bottom: 1rem;
-}
-
-.screen-doctor > .profile-wrapper > .time-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  overflow-x: auto;
-}
-
-.screen-doctor > .profile-wrapper > .time-list > .item {
-  width: 4.5rem;
-  height: 1.5rem;
-  line-height: 1.5rem;
-  border-radius: 1rem;
-  text-align: center;
-  background-color: #e6e6e6;
-  margin-right: 1rem;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  color: #373C4D;
-  margin-bottom: 2rem;
-}
-
-.screen-doctor > .profile-wrapper > .time-list > .item.-active {
-  background-color: #373C4D;
-  color: #fff;
-}
-
-.screen-doctor > .profile-wrapper > .time-list > .item.-now {
-  background-color: #D43649;
-  color: #fff;
 }
 
 .screen-dashboard > .wrapper {

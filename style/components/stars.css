@@ -1,0 +1,16 @@
+.stars {
+  display: flex;
+}
+
+.stars > .star {
+  width: 1rem;
+  height: 1rem;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../images/icons/star-light.svg");
+}
+
+.stars > .star.-full {
+  background-image: url("../images/icons/star-dark.svg");
+}
