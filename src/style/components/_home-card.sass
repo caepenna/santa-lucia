@@ -1,0 +1,46 @@
+.home-card
+  background-color: #fff
+  border-radius: 0.5rem
+  margin-left: 0.5rem
+  margin-right: 0.5rem
+  padding: 1rem
+  padding-bottom: 2rem
+  position: relative
+
+  > .title
+    color: $color-highlight
+    font-size: $font-size-deca
+
+  > .button
+    position: absolute
+    right: 1rem
+    top: 1rem
+
+  > .label
+    border-top: 1px solid $color-coolgray-light
+    border-bottom: none
+    padding-top: 1rem
+    margin-top: 1rem
+    margin-left: 3rem
+    width: auto
+    position: relative
+    color: $color-coolgray-dark
+    > div:not(:first-child)
+      color: $color-highlight
+    &:before
+      content: ''
+      position: absolute
+      width: 3rem
+      height: 3rem
+      display: block
+      left: -3rem
+      background-position: center
+      background-size: 100%
+      background-repeat: no-repeat
+      top: calc(50% + 0.5rem)
+      transform: translateY(-50%)
+    &.-arrival:before
+      background-image: url("../images/icons/red-clock.svg")
+    &.-contact:before
+      background-image: url("../images/icons/red-chat.svg")
+    

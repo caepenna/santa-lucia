@@ -695,7 +695,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: calc(100% - 4rem);
-  padding: 4rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -727,6 +727,89 @@ body {
 .alert-box > .alert > .toggle-buttons > .button {
   padding-right: 2rem;
   padding-left: 2rem;
+}
+
+.home-card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.home-card > .title {
+  color: #D43649;
+  font-size: 18px;
+}
+
+.home-card > .button {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.home-card > .label {
+  border-top: 1px solid #9499B7;
+  border-bottom: none;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  width: auto;
+  position: relative;
+  color: #373C4D;
+}
+
+.home-card > .label > div:not(:first-child) {
+  color: #D43649;
+}
+
+.home-card > .label:before {
+  content: '';
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  left: -3rem;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  top: calc(50% + 0.5rem);
+  transform: translateY(-50%);
+}
+
+.home-card > .label.-arrival:before {
+  background-image: url("../images/icons/red-clock.svg");
+}
+
+.home-card > .label.-contact:before {
+  background-image: url("../images/icons/red-chat.svg");
+}
+
+.doctor-card {
+  display: flex;
+  align-items: center;
+}
+
+.doctor-card > .avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  background-image: url("../images/avatar-doctor.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.doctor-card > .info {
+  font-size: 14px;
+  color: #373C4D;
+}
+
+.doctor-card > .info > .specialty {
+  color: #999999;
 }
 
 .button {
@@ -1259,4 +1342,9 @@ body {
 
 .screen-dashboard > .wrapper > .item.-embergency > .icon::before {
   background-image: url("../images/icons/dashboard-emergency.svg");
+}
+
+.screen-home {
+  background-color: #f0f0f0;
+  padding-top: 5rem;
 }

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>white-clock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="generic" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="white-clock" fill="#FFFFFF">
+            <path d="M48,32.28 C57.939,32.28 66,40.34 66,50.28 C66,60.22 57.939,68.28 48,68.28 C38.04,68.28 30,60.22 30,50.28 C30,40.34 38.06,32.28 48,32.28 Z M48,64.28 C55.739,64.28 62,58.02 62,50.28 C62,42.54 55.739,36.28 48,36.28 C40.26,36.28 34,42.54 34,50.28 C34,58.02 40.26,64.28 48,64.28 Z M49,40.28 L49,50.78 L57,55.52 L55.5,57.98 L46,52.28 L46,40.28 L49,40.28 Z M39.76,31.06 L30.58,38.76 L28,35.7 L37.199,28 L39.76,31.06 Z M68,35.72 L65.42,38.78 L56.22,31.06 L58.8,28 L68,35.72 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>
