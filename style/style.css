@@ -1960,6 +1960,57 @@ body {
   text-align: center;
 }
 
+.screen-appointment > .time {
+  padding-left: 4rem;
+  margin-top: 2rem;
+}
+
+.screen-appointment > .time::before {
+  content: '';
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 1rem;
+  top: calc(50% - 0.5rem);
+  transform: translateY(-50%);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../images/icons/red-clock.svg");
+}
+
+.screen-appointment > .time > .day {
+  font-size: 14px;
+  margin-bottom: 0.25rem;
+}
+
+.screen-appointment > .time > .time {
+  font-size: 21px;
+}
+
+.screen-appointment > .doctor-card {
+  padding-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.screen-appointment > .time,
+.screen-appointment > .doctor-card {
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.screen-appointment > .time::after,
+.screen-appointment > .doctor-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 4rem;
+  right: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 1px;
+}
+
 .screen-appointment > .button {
   display: block;
   margin-left: 4rem;

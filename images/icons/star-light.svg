@@ -5,7 +5,7 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="stars" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="star-light" fill="#CCCCCC">
+        <g id="star-light" fill="#999999">
             <polygon id="Page-1" points="16.455 3.9999 13.445 13.3409 4 13.3409 11.701 18.8209 8.754 27.8719 16.455 22.2669 24.156 27.8719 21.209 18.8209 28.91 13.3409 19.465 13.3409"></polygon>
         </g>
     </g>
