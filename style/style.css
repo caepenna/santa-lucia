@@ -1930,3 +1930,38 @@ body {
   height: 5rem;
   font-size: 14px;
 }
+
+.screen-appointment {
+  padding-top: 3rem;
+}
+
+.screen-appointment > .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #D43649;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+.screen-appointment > .hero > .icon {
+  width: 8rem;
+  height: 8rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/icons/calendar.svg");
+}
+
+.screen-appointment > .hero > .message {
+  font-size: 18px;
+  color: #fff;
+  max-width: 60%;
+  text-align: center;
+}
+
+.screen-appointment > .button {
+  display: block;
+  margin-left: 4rem;
+  margin-right: 1rem;
+}
