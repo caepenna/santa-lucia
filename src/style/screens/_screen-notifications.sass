@@ -1,0 +1,86 @@
+.screen-notifications
+  padding-top: 4rem
+
+  > .reminders,
+  > .messages
+    > .title
+      color: $color-highlight
+      font-size: $font-size-deca
+      padding-left: 4rem
+      position: relative
+      margin-top: 2rem
+      margin-bottom: 1rem
+      &::before
+        content: ''
+        width: 3rem
+        height: 3rem
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        background-position: center
+        background-size: 100%
+        background-repeat: no-repeat
+  > .reminders > .title::before
+    background-image: url("../images/icons/red-clock.svg")
+  > .messages > .title::before
+    background-image: url("../images/icons/red-chat.svg")
+
+  > .reminders,
+  > .messages
+    > .list
+      > .item
+        padding-top: 1rem
+        padding-bottom: 1rem
+        padding-right: 3.5rem
+        position: relative
+        font-size: $font-size-base
+        &::before
+          content: ''
+          width: 1.5rem
+          height: 1.5rem
+          position: absolute
+          right: 1rem
+          top: 50%
+          transform: translateY(-50%)
+          background-position: center
+          background-size: 100%
+          background-repeat: no-repeat
+          background-image: url("../images/icons/gray-x.svg")
+        &:not(:last-child)::after
+          content: ''
+          position: absolute
+          bottom: 0
+          left: 4rem
+          right: 1rem
+          background-color: rgba(#000, 0.1)
+          height: 1px
+
+  > .reminders > .list > .item
+    padding-left: 4rem
+    > div:not(:last-child)
+      margin-bottom: 0.5rem
+    > .-gray
+      color: hsl(0, 0, 60%)
+
+  > .messages
+
+    > .list > .item
+      &.-active
+        background-color: rgba(#000, 0.05)
+      > .doctor-card
+        margin-left: 1rem
+        > .info
+          display: flex
+          flex-direction: column
+          > .message
+            color: hsl(0, 0, 60%)
+            overflow: hidden
+            height: 1rem
+            line-height: 1rem
+
+    > .button
+      display: block
+      margin-top: 2rem
+      margin-right: 1rem
+      margin-left: 4rem

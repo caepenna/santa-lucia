@@ -837,6 +837,7 @@ body {
 
 .doctor-card > .avatar {
   width: 2.5rem;
+  min-width: 2.5rem;
   height: 2.5rem;
   margin-right: 1rem;
   border-radius: 50%;
@@ -1792,4 +1793,114 @@ body {
 
 .screen-history > .timeline.-old > .month:before {
   background-color: #66809F;
+}
+
+.screen-notifications {
+  padding-top: 4rem;
+}
+
+.screen-notifications > .reminders > .title,
+.screen-notifications > .messages > .title {
+  color: #D43649;
+  font-size: 18px;
+  padding-left: 4rem;
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.screen-notifications > .reminders > .title::before,
+.screen-notifications > .messages > .title::before {
+  content: '';
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.screen-notifications > .reminders > .title::before {
+  background-image: url("../images/icons/red-clock.svg");
+}
+
+.screen-notifications > .messages > .title::before {
+  background-image: url("../images/icons/red-chat.svg");
+}
+
+.screen-notifications > .reminders > .list > .item,
+.screen-notifications > .messages > .list > .item {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 3.5rem;
+  position: relative;
+  font-size: 14px;
+}
+
+.screen-notifications > .reminders > .list > .item::before,
+.screen-notifications > .messages > .list > .item::before {
+  content: '';
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../images/icons/gray-x.svg");
+}
+
+.screen-notifications > .reminders > .list > .item:not(:last-child)::after,
+.screen-notifications > .messages > .list > .item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 4rem;
+  right: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 1px;
+}
+
+.screen-notifications > .reminders > .list > .item {
+  padding-left: 4rem;
+}
+
+.screen-notifications > .reminders > .list > .item > div:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.screen-notifications > .reminders > .list > .item > .-gray {
+  color: #999999;
+}
+
+.screen-notifications > .messages > .list > .item.-active {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.screen-notifications > .messages > .list > .item > .doctor-card {
+  margin-left: 1rem;
+}
+
+.screen-notifications > .messages > .list > .item > .doctor-card > .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.screen-notifications > .messages > .list > .item > .doctor-card > .info > .message {
+  color: #999999;
+  overflow: hidden;
+  height: 1rem;
+  line-height: 1rem;
+}
+
+.screen-notifications > .messages > .button {
+  display: block;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  margin-left: 4rem;
 }
